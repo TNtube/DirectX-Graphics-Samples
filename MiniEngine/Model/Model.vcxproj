@@ -57,6 +57,15 @@
     <Manifest>
       <EnableDPIAwareness>true</EnableDPIAwareness>
     </Manifest>
+    <FxCompile>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">6.8</ShaderModel>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">6.8</ShaderModel>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">6.8</ShaderModel>
+    </FxCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
