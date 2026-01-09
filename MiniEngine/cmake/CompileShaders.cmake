@@ -1,8 +1,17 @@
 # CompileShaders.cmake - HLSL shader compilation using DXC
 
 # Find DXC (DirectX Shader Compiler)
+# Prefers the fetched DXC from NuGet (required for cooperative vectors)
 function(find_dxc_compiler)
-    # Try to find DXC from Windows SDK or Vulkan SDK
+    # First, check if we have a fetched DXC from FetchDependencies.cmake
+    if(DXC_FETCHED_EXECUTABLE AND EXISTS "${DXC_FETCHED_EXECUTABLE}")
+        file(TO_CMAKE_PATH "${DXC_FETCHED_EXECUTABLE}" DXC_EXECUTABLE)
+        message(STATUS "Using fetched DXC: ${DXC_EXECUTABLE}")
+        set(DXC_EXECUTABLE "${DXC_EXECUTABLE}" CACHE FILEPATH "DXC executable path" FORCE)
+        return()
+    endif()
+
+    # Fallback: Try to find DXC from Windows SDK or Vulkan SDK
     find_program(DXC_EXECUTABLE dxc
         HINTS
             "$ENV{WindowsSdkVerBinPath}/x64"
@@ -27,38 +36,40 @@ function(find_dxc_compiler)
     # Normalize path (convert backslashes to forward slashes for CMake)
     file(TO_CMAKE_PATH "${DXC_EXECUTABLE}" DXC_EXECUTABLE)
 
-    message(STATUS "Found DXC: ${DXC_EXECUTABLE}")
+    message(STATUS "Found DXC (fallback): ${DXC_EXECUTABLE}")
+    message(WARNING "Using system DXC. Cooperative vectors may not be supported. "
+        "Consider ensuring DXC is fetched via FetchDependencies.cmake.")
     set(DXC_EXECUTABLE "${DXC_EXECUTABLE}" CACHE FILEPATH "DXC executable path" FORCE)
 endfunction()
 
 # Determine shader type and profile from filename
-# Returns: TYPE (cs/vs/ps/gs/hs/ds) and PROFILE (e.g., cs_6_8)
+# Returns: TYPE (cs/vs/ps/gs/hs/ds) and PROFILE (e.g., cs_6_9)
 function(get_shader_type_from_filename FILENAME OUT_TYPE OUT_PROFILE)
     get_filename_component(NAME_WE ${FILENAME} NAME_WE)
 
     # Check suffix for shader type
     if(NAME_WE MATCHES "CS$")
         set(${OUT_TYPE} "cs" PARENT_SCOPE)
-        set(${OUT_PROFILE} "cs_6_8" PARENT_SCOPE)
+        set(${OUT_PROFILE} "cs_6_9" PARENT_SCOPE)
     elseif(NAME_WE MATCHES "VS$")
         set(${OUT_TYPE} "vs" PARENT_SCOPE)
-        set(${OUT_PROFILE} "vs_6_8" PARENT_SCOPE)
+        set(${OUT_PROFILE} "vs_6_9" PARENT_SCOPE)
     elseif(NAME_WE MATCHES "PS$")
         set(${OUT_TYPE} "ps" PARENT_SCOPE)
-        set(${OUT_PROFILE} "ps_6_8" PARENT_SCOPE)
+        set(${OUT_PROFILE} "ps_6_9" PARENT_SCOPE)
     elseif(NAME_WE MATCHES "GS$")
         set(${OUT_TYPE} "gs" PARENT_SCOPE)
-        set(${OUT_PROFILE} "gs_6_8" PARENT_SCOPE)
+        set(${OUT_PROFILE} "gs_6_9" PARENT_SCOPE)
     elseif(NAME_WE MATCHES "HS$")
         set(${OUT_TYPE} "hs" PARENT_SCOPE)
-        set(${OUT_PROFILE} "hs_6_8" PARENT_SCOPE)
+        set(${OUT_PROFILE} "hs_6_9" PARENT_SCOPE)
     elseif(NAME_WE MATCHES "DS$")
         set(${OUT_TYPE} "ds" PARENT_SCOPE)
-        set(${OUT_PROFILE} "ds_6_8" PARENT_SCOPE)
+        set(${OUT_PROFILE} "ds_6_9" PARENT_SCOPE)
     else()
         # Default to compute shader (matching VS project behavior)
         set(${OUT_TYPE} "cs" PARENT_SCOPE)
-        set(${OUT_PROFILE} "cs_6_8" PARENT_SCOPE)
+        set(${OUT_PROFILE} "cs_6_9" PARENT_SCOPE)
     endif()
 endfunction()
 
@@ -135,22 +146,22 @@ function(compile_hlsl_shaders)
                 set(OVERRIDE_TYPE "${CMAKE_MATCH_1}")
                 if(OVERRIDE_TYPE STREQUAL "Vertex")
                     set(SHADER_TYPE "vs")
-                    set(SHADER_PROFILE "vs_6_8")
+                    set(SHADER_PROFILE "vs_6_9")
                 elseif(OVERRIDE_TYPE STREQUAL "Pixel")
                     set(SHADER_TYPE "ps")
-                    set(SHADER_PROFILE "ps_6_8")
+                    set(SHADER_PROFILE "ps_6_9")
                 elseif(OVERRIDE_TYPE STREQUAL "Compute")
                     set(SHADER_TYPE "cs")
-                    set(SHADER_PROFILE "cs_6_8")
+                    set(SHADER_PROFILE "cs_6_9")
                 elseif(OVERRIDE_TYPE STREQUAL "Geometry")
                     set(SHADER_TYPE "gs")
-                    set(SHADER_PROFILE "gs_6_8")
+                    set(SHADER_PROFILE "gs_6_9")
                 elseif(OVERRIDE_TYPE STREQUAL "Hull")
                     set(SHADER_TYPE "hs")
-                    set(SHADER_PROFILE "hs_6_8")
+                    set(SHADER_PROFILE "hs_6_9")
                 elseif(OVERRIDE_TYPE STREQUAL "Domain")
                     set(SHADER_TYPE "ds")
-                    set(SHADER_PROFILE "ds_6_8")
+                    set(SHADER_PROFILE "ds_6_9")
                 endif()
                 break()
             endif()
@@ -169,7 +180,7 @@ function(compile_hlsl_shaders)
 
         # Build DXC command
         # Common flags:
-        # -T <profile>: Target profile (cs_6_8, vs_6_8, etc.)
+        # -T <profile>: Target profile (cs_6_9, vs_6_9, etc.)
         # -E main: Entry point
         # -HV 2021: HLSL version 2021
         # -Fh <file>: Output header file

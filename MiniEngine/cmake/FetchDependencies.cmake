@@ -30,6 +30,27 @@ function(fetch_miniengine_dependencies)
     )
 
     # ============================================
+    # Microsoft.Direct3D.DXC 1.8.2505.28
+    # (Required for Cooperative Vectors shader compilation)
+    # ============================================
+    FetchContent_Declare(
+        DXC
+        URL "https://api.nuget.org/v3-flatcontainer/microsoft.direct3d.dxc/1.8.2505.28/microsoft.direct3d.dxc.1.8.2505.28.nupkg"
+        DOWNLOAD_EXTRACT_TIMESTAMP TRUE
+    )
+    FetchContent_MakeAvailable(DXC)
+
+    # Store DXC executable path for shader compilation
+    set(DXC_FETCHED_EXECUTABLE
+        "${dxc_SOURCE_DIR}/build/native/bin/x64/dxc.exe"
+        CACHE FILEPATH "Fetched DXC executable path" FORCE
+    )
+    set(DXC_BIN_DIR
+        "${dxc_SOURCE_DIR}/build/native/bin/x64"
+        CACHE PATH "DXC binary directory" FORCE
+    )
+
+    # ============================================
     # WinPixEventRuntime (GPU debugging)
     # ============================================
     FetchContent_Declare(

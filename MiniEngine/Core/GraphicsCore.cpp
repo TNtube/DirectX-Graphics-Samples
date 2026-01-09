@@ -38,6 +38,13 @@
     #include <winreg.h>		// To read the registry
 #endif
 
+// ============================================================================
+// D3D12 Agility SDK Configuration
+// Using lastest preview for Agility SDK to enable Cooperative Vectors.
+// ============================================================================
+extern "C" { __declspec(dllexport) extern const UINT D3D12SDKVersion = 717; }
+extern "C" { __declspec(dllexport) extern const char* D3D12SDKPath = ".\\D3D12\\"; }
+
 using namespace Math;
 
 namespace Graphics
@@ -235,8 +242,12 @@ void Graphics::Initialize(bool RequireDXRSupport)
         Utility::Printf(L"Looking for a %s GPU\n", GPUVendorToString(desiredVendor));
     }
 
-    // Temporary workaround because SetStablePowerState() is crashing
-    D3D12EnableExperimentalFeatures(0, nullptr, nullptr, nullptr);
+    // Enable experimental shader models (required for SM 6.9 / Cooperative Vectors)
+    UUID experimentalFeatures[] = { D3D12ExperimentalShaderModels };
+    if (FAILED(D3D12EnableExperimentalFeatures(1, experimentalFeatures, nullptr, nullptr)))
+    {
+        Utility::Print("WARNING: Failed to enable experimental shader models (SM 6.9)\n");
+    }
 
     if (!bUseWarpDriver)
     {
