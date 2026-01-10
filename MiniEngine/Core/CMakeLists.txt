@@ -132,6 +132,7 @@ set(CORE_HEADERS
     Math/Transform.h
     Math/Vector.h
     Util/CommandLineArg.h
+    Benchmark/Statistics.h
 )
 
 # Create static library
@@ -145,6 +146,7 @@ target_include_directories(Core
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}
         ${CMAKE_CURRENT_SOURCE_DIR}/Math
+        ${CMAKE_CURRENT_SOURCE_DIR}/Benchmark
     PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/Util
 )
@@ -210,6 +212,7 @@ source_group("Source Files" FILES ${CORE_SOURCES})
 source_group("Header Files" FILES ${CORE_HEADERS})
 source_group("Math" REGULAR_EXPRESSION "Math/.*")
 source_group("Util" REGULAR_EXPRESSION "Util/.*")
+source_group("Benchmark" REGULAR_EXPRESSION "Benchmark/.*")
 
 # Shader files for IDE visibility (not compiled by C++ compiler)
 file(GLOB CORE_SHADER_FILES "Shaders/*.hlsl" "Shaders/*.hlsli")
