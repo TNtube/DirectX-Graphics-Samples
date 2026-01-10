@@ -33,8 +33,7 @@
 #include "ModelLoader.h"
 #include "ShadowCamera.h"
 #include "Display.h"
- #include <nlohmann/json.hpp>
-
+#include "HardwareInfo.h"
 
 #define LEGACY_RENDERER
 
@@ -157,6 +156,12 @@ void ModelViewer::Startup( void )
     SSAO::Enable = true;
 
     Renderer::Initialize();
+
+    Benchmark::HardwareInfo::Initialize();
+    auto gpu = Benchmark::HardwareInfo::GetGpuInfo();
+    auto cpu = Benchmark::HardwareInfo::GetCpuInfo();
+    Utility::Printf("GPU: %s (%s) VRAM: %lluMB SM: %s\n", gpu.Name.c_str(), gpu.Vendor.c_str(), gpu.VramMB, gpu.ShaderModel.c_str());
+    Utility::Printf("CPU: %s Cores: %u RAM: %lluMB\n", cpu.Name.c_str(), cpu.Cores, Benchmark::HardwareInfo::GetSystemRamMB());
 
     LoadIBLTextures();
 

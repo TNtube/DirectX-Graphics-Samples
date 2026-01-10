@@ -56,6 +56,7 @@ set(CORE_SOURCES
     Math/Frustum.cpp
     Math/Random.cpp
     Util/CommandLineArg.cpp
+    Benchmark/HardwareInfo.cpp
     pch.cpp
 )
 
@@ -133,6 +134,7 @@ set(CORE_HEADERS
     Math/Vector.h
     Util/CommandLineArg.h
     Benchmark/Statistics.h
+    Benchmark/HardwareInfo.h
 )
 
 # Create static library
