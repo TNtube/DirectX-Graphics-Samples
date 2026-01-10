@@ -147,5 +147,17 @@ function(fetch_miniengine_dependencies)
     set(FT_DISABLE_PNG ON CACHE BOOL "" FORCE)
     FetchContent_MakeAvailable(freetype)
 
+    # ============================================
+    # nlohmann/json (header-only JSON library)
+    # ============================================
+    FetchContent_Declare(
+        nlohmann_json
+        GIT_REPOSITORY https://github.com/nlohmann/json.git
+        GIT_TAG v3.11.3
+        GIT_SHALLOW TRUE
+    )
+    set(JSON_BuildTests OFF CACHE BOOL "" FORCE)
+    FetchContent_MakeAvailable(nlohmann_json)
+
     message(STATUS "All dependencies fetched successfully")
 endfunction()

@@ -154,6 +154,9 @@ target_include_directories(Core
 # Configure common settings
 configure_miniengine_target(Core)
 
+# Link nlohmann_json for benchmark system
+target_link_libraries(Core PUBLIC nlohmann_json::nlohmann_json)
+
 # Shader type overrides for shaders that don't follow naming convention
 # These are extracted from Core.vcxproj where explicit <ShaderType> is specified
 set(CORE_SHADER_TYPE_OVERRIDES

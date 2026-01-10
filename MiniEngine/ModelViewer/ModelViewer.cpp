@@ -33,7 +33,8 @@
 #include "ModelLoader.h"
 #include "ShadowCamera.h"
 #include "Display.h"
-#include "Statistics.h"
+ #include <nlohmann/json.hpp>
+
 
 #define LEGACY_RENDERER
 
@@ -147,10 +148,6 @@ void LoadIBLTextures()
 
 void ModelViewer::Startup( void )
 {
-    // Test Statistics.h
-    std::vector<float> testData = { 10.0f, 12.0f, 8.0f, 15.0f, 7.0f, 20.0f, 9.0f, 11.0f, 13.0f, 14.0f };
-    Benchmark::Statistics stats = Benchmark::Statistics::Compute(testData);
-    Utility::Printf("Stats test: mean=%.2f median=%.2f stddev=%.2f\n", stats.Mean, stats.Median, stats.StdDev);
 
     MotionBlur::Enable = true;
     TemporalEffects::EnableTAA = true;
