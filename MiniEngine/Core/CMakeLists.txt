@@ -57,6 +57,7 @@ set(CORE_SOURCES
     Math/Random.cpp
     Util/CommandLineArg.cpp
     Benchmark/HardwareInfo.cpp
+    Benchmark/MemoryTracker.cpp
     pch.cpp
 )
 
@@ -135,6 +136,7 @@ set(CORE_HEADERS
     Util/CommandLineArg.h
     Benchmark/Statistics.h
     Benchmark/HardwareInfo.h
+    Benchmark/MemoryTracker.h
 )
 
 # Create static library

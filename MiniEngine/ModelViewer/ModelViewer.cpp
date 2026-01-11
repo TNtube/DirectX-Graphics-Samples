@@ -34,6 +34,7 @@
 #include "ShadowCamera.h"
 #include "Display.h"
 #include "HardwareInfo.h"
+#include "MemoryTracker.h"
 
 #define LEGACY_RENDERER
 
@@ -158,10 +159,8 @@ void ModelViewer::Startup( void )
     Renderer::Initialize();
 
     Benchmark::HardwareInfo::Initialize();
-    auto gpu = Benchmark::HardwareInfo::GetGpuInfo();
-    auto cpu = Benchmark::HardwareInfo::GetCpuInfo();
-    Utility::Printf("GPU: %s (%s) VRAM: %lluMB SM: %s\n", gpu.Name.c_str(), gpu.Vendor.c_str(), gpu.VramMB, gpu.ShaderModel.c_str());
-    Utility::Printf("CPU: %s Cores: %u RAM: %lluMB\n", cpu.Name.c_str(), cpu.Cores, Benchmark::HardwareInfo::GetSystemRamMB());
+    Benchmark::MemoryTracker::Initialize();
+    Benchmark::MemoryTracker::Sample();
 
     LoadIBLTextures();
 
@@ -199,6 +198,12 @@ void ModelViewer::Startup( void )
         m_CameraController.reset(new FlyingFPSCamera(m_Camera, Vector3(kYUnitVector)));
     else
         m_CameraController.reset(new OrbitCamera(m_Camera, m_ModelInst.GetBoundingSphere(), Vector3(kYUnitVector)));
+
+    Benchmark::MemoryTracker::Sample();
+    Utility::Printf("MemoryTracker: peak=%lluMB avg=%lluMB samples=%zu\n",
+        Benchmark::MemoryTracker::GetPeakCommittedMB(),
+        Benchmark::MemoryTracker::GetAverageCommittedMB(),
+        Benchmark::MemoryTracker::GetSamples().size());
 }
 
 void ModelViewer::Cleanup( void )
