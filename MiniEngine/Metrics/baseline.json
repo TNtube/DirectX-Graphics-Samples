@@ -1,0 +1,3101 @@
+{
+  "memory": {
+    "vram_mb": {
+      "budget": 7189,
+      "committed_end": 574,
+      "committed_peak": 574,
+      "committed_start": 523
+    }
+  },
+  "metadata": {
+    "build_config": "Release",
+    "hardware": {
+      "cpu": {
+        "cores": 16,
+        "frequency_mhz": 2918,
+        "name": "13th Gen Intel(R) Core(TM) i7-13620H",
+        "threads": 16
+      },
+      "gpu": {
+        "driver_version": "32.0.15.9026",
+        "feature_level": "11_0",
+        "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "shader_model": "6.9",
+        "vendor": "NVIDIA",
+        "vram_mb": 7957
+      },
+      "os": "Windows 10.0.26100",
+      "ram_gb": 63.796875
+    },
+    "precision_mode": "fp32_baseline",
+    "scene": {
+      "name": "Sponza"
+    },
+    "test_params": {
+      "measured_frames": 500,
+      "warmup_frames": 120
+    },
+    "timestamp": "2026-01-11T17:32:38"
+  },
+  "performance": {
+    "cpu_time_ms": {
+      "total": {
+        "coefficient_of_variation": 0.26817250843060214,
+        "max": 1.0062000751495361,
+        "mean": 0.4312180025279522,
+        "median": 0.4350000023841858,
+        "min": 0.17069999873638153,
+        "p1": 0.21604500725865367,
+        "p5": 0.2597749873995781,
+        "p95": 0.6115950495004655,
+        "p99": 0.7782850724458692,
+        "sample_count": 500,
+        "std_dev": 0.1156408134183547
+      }
+    },
+    "fps": {
+      "coefficient_of_variation": 0.18254030264813245,
+      "max": 358.7752685546875,
+      "mean": 252.36407470703125,
+      "median": 246.08372497558594,
+      "min": 152.18069458007813,
+      "p1": 169.50645782470704,
+      "p5": 181.30839996337892,
+      "p95": 324.81042633056643,
+      "p99": 341.67832611083986,
+      "sample_count": 500,
+      "std_dev": 46.06661457453739
+    },
+    "frame_time_ms": {
+      "coefficient_of_variation": 0.18672206863861637,
+      "max": 6.571135997772217,
+      "mean": 4.099679009914398,
+      "median": 4.063663959503174,
+      "min": 2.787260055541992,
+      "p1": 2.9267294239997863,
+      "p5": 3.0787227630615233,
+      "p95": 5.515468645095826,
+      "p99": 5.899482550621032,
+      "sample_count": 500,
+      "std_dev": 0.765500545485531
+    },
+    "gpu_time_ms": {
+      "total": {
+        "coefficient_of_variation": 0.20632080114194495,
+        "max": 5.979135990142822,
+        "mean": 3.668461003780365,
+        "median": 3.687391996383667,
+        "min": 2.56496000289917,
+        "p1": 2.585589895248413,
+        "p5": 2.6306560039520264,
+        "p95": 5.117132878303528,
+        "p99": 5.400781145095824,
+        "sample_count": 500,
+        "std_dev": 0.7568798132579485
+      }
+    },
+    "per_frame_data": [
+      {
+        "cpu_total_ms": 0.7470000386238098,
+        "frame_index": 0,
+        "frame_time_ms": 4.944375514984131,
+        "gpu_total_ms": 4.197375297546387
+      },
+      {
+        "cpu_total_ms": 0.4121999740600586,
+        "frame_index": 1,
+        "frame_time_ms": 3.5937678813934326,
+        "gpu_total_ms": 3.181567907333374
+      },
+      {
+        "cpu_total_ms": 0.40459999442100525,
+        "frame_index": 2,
+        "frame_time_ms": 3.355736255645752,
+        "gpu_total_ms": 2.951136350631714
+      },
+      {
+        "cpu_total_ms": 0.4352000057697296,
+        "frame_index": 3,
+        "frame_time_ms": 4.635647773742676,
+        "gpu_total_ms": 4.2004475593566895
+      },
+      {
+        "cpu_total_ms": 0.4819999933242798,
+        "frame_index": 4,
+        "frame_time_ms": 4.208335876464844,
+        "gpu_total_ms": 3.7263360023498535
+      },
+      {
+        "cpu_total_ms": 0.4513000249862671,
+        "frame_index": 5,
+        "frame_time_ms": 5.800676345825195,
+        "gpu_total_ms": 5.349376201629639
+      },
+      {
+        "cpu_total_ms": 0.462799996137619,
+        "frame_index": 6,
+        "frame_time_ms": 4.68884801864624,
+        "gpu_total_ms": 4.226047992706299
+      },
+      {
+        "cpu_total_ms": 0.34520000219345093,
+        "frame_index": 7,
+        "frame_time_ms": 4.168816089630127,
+        "gpu_total_ms": 3.8236160278320313
+      },
+      {
+        "cpu_total_ms": 0.3659999966621399,
+        "frame_index": 8,
+        "frame_time_ms": 4.70468807220459,
+        "gpu_total_ms": 4.338687896728516
+      },
+      {
+        "cpu_total_ms": 0.3231000304222107,
+        "frame_index": 9,
+        "frame_time_ms": 4.404764175415039,
+        "gpu_total_ms": 4.081664085388184
+      },
+      {
+        "cpu_total_ms": 0.3067000210285187,
+        "frame_index": 10,
+        "frame_time_ms": 3.4114677906036377,
+        "gpu_total_ms": 3.1047677993774414
+      },
+      {
+        "cpu_total_ms": 0.31530001759529114,
+        "frame_index": 11,
+        "frame_time_ms": 5.935011863708496,
+        "gpu_total_ms": 5.619711875915527
+      },
+      {
+        "cpu_total_ms": 0.4099999964237213,
+        "frame_index": 12,
+        "frame_time_ms": 3.2669599056243896,
+        "gpu_total_ms": 2.856959819793701
+      },
+      {
+        "cpu_total_ms": 0.35700005292892456,
+        "frame_index": 13,
+        "frame_time_ms": 4.3782477378845215,
+        "gpu_total_ms": 4.021247863769531
+      },
+      {
+        "cpu_total_ms": 0.3256000280380249,
+        "frame_index": 14,
+        "frame_time_ms": 3.160031795501709,
+        "gpu_total_ms": 2.8344318866729736
+      },
+      {
+        "cpu_total_ms": 0.35040000081062317,
+        "frame_index": 15,
+        "frame_time_ms": 4.135103702545166,
+        "gpu_total_ms": 3.7847037315368652
+      },
+      {
+        "cpu_total_ms": 0.32440000772476196,
+        "frame_index": 16,
+        "frame_time_ms": 3.489583730697632,
+        "gpu_total_ms": 3.1651837825775146
+      },
+      {
+        "cpu_total_ms": 0.3397999703884125,
+        "frame_index": 17,
+        "frame_time_ms": 4.045655727386475,
+        "gpu_total_ms": 3.7058558464050293
+      },
+      {
+        "cpu_total_ms": 0.30799999833106995,
+        "frame_index": 18,
+        "frame_time_ms": 4.3251519203186035,
+        "gpu_total_ms": 4.017151832580566
+      },
+      {
+        "cpu_total_ms": 0.3073999881744385,
+        "frame_index": 19,
+        "frame_time_ms": 3.122375726699829,
+        "gpu_total_ms": 2.8149757385253906
+      },
+      {
+        "cpu_total_ms": 0.31950002908706665,
+        "frame_index": 20,
+        "frame_time_ms": 5.696524143218994,
+        "gpu_total_ms": 5.377024173736572
+      },
+      {
+        "cpu_total_ms": 0.3237999975681305,
+        "frame_index": 21,
+        "frame_time_ms": 4.637911796569824,
+        "gpu_total_ms": 4.314111709594727
+      },
+      {
+        "cpu_total_ms": 0.32590001821517944,
+        "frame_index": 22,
+        "frame_time_ms": 4.316428184509277,
+        "gpu_total_ms": 3.990528106689453
+      },
+      {
+        "cpu_total_ms": 0.3240000009536743,
+        "frame_index": 23,
+        "frame_time_ms": 3.9079999923706055,
+        "gpu_total_ms": 3.5839998722076416
+      },
+      {
+        "cpu_total_ms": 0.2726000249385834,
+        "frame_index": 24,
+        "frame_time_ms": 4.472024440765381,
+        "gpu_total_ms": 4.1994242668151855
+      },
+      {
+        "cpu_total_ms": 0.2574000060558319,
+        "frame_index": 25,
+        "frame_time_ms": 3.2904880046844482,
+        "gpu_total_ms": 3.033087968826294
+      },
+      {
+        "cpu_total_ms": 0.29899999499320984,
+        "frame_index": 26,
+        "frame_time_ms": 4.52402400970459,
+        "gpu_total_ms": 4.225024223327637
+      },
+      {
+        "cpu_total_ms": 0.2986999750137329,
+        "frame_index": 27,
+        "frame_time_ms": 4.261579990386963,
+        "gpu_total_ms": 3.9628798961639404
+      },
+      {
+        "cpu_total_ms": 0.32979997992515564,
+        "frame_index": 28,
+        "frame_time_ms": 3.91379976272583,
+        "gpu_total_ms": 3.5839998722076416
+      },
+      {
+        "cpu_total_ms": 0.343099981546402,
+        "frame_index": 29,
+        "frame_time_ms": 4.724795818328857,
+        "gpu_total_ms": 4.381695747375488
+      },
+      {
+        "cpu_total_ms": 0.3864000141620636,
+        "frame_index": 30,
+        "frame_time_ms": 4.627808570861816,
+        "gpu_total_ms": 4.241408348083496
+      },
+      {
+        "cpu_total_ms": 0.45829999446868896,
+        "frame_index": 31,
+        "frame_time_ms": 4.9106526374816895,
+        "gpu_total_ms": 4.452352523803711
+      },
+      {
+        "cpu_total_ms": 0.4074999988079071,
+        "frame_index": 32,
+        "frame_time_ms": 3.4856438636779785,
+        "gpu_total_ms": 3.078143835067749
+      },
+      {
+        "cpu_total_ms": 0.8965000510215759,
+        "frame_index": 33,
+        "frame_time_ms": 4.0821638107299805,
+        "gpu_total_ms": 3.185663938522339
+      },
+      {
+        "cpu_total_ms": 0.5049000382423401,
+        "frame_index": 34,
+        "frame_time_ms": 3.9004838466644287,
+        "gpu_total_ms": 3.3955838680267334
+      },
+      {
+        "cpu_total_ms": 0.4538000226020813,
+        "frame_index": 35,
+        "frame_time_ms": 4.486312389373779,
+        "gpu_total_ms": 4.032512187957764
+      },
+      {
+        "cpu_total_ms": 0.29739999771118164,
+        "frame_index": 36,
+        "frame_time_ms": 3.92031192779541,
+        "gpu_total_ms": 3.6229119300842285
+      },
+      {
+        "cpu_total_ms": 0.32429999113082886,
+        "frame_index": 37,
+        "frame_time_ms": 5.487308025360107,
+        "gpu_total_ms": 5.163008213043213
+      },
+      {
+        "cpu_total_ms": 0.4756000339984894,
+        "frame_index": 38,
+        "frame_time_ms": 3.5445282459259033,
+        "gpu_total_ms": 3.0689282417297363
+      },
+      {
+        "cpu_total_ms": 0.4869000017642975,
+        "frame_index": 39,
+        "frame_time_ms": 6.1383562088012695,
+        "gpu_total_ms": 5.651456356048584
+      },
+      {
+        "cpu_total_ms": 0.52920001745224,
+        "frame_index": 40,
+        "frame_time_ms": 4.771632194519043,
+        "gpu_total_ms": 4.242432117462158
+      },
+      {
+        "cpu_total_ms": 0.5530000329017639,
+        "frame_index": 41,
+        "frame_time_ms": 3.6434319019317627,
+        "gpu_total_ms": 3.0904319286346436
+      },
+      {
+        "cpu_total_ms": 0.5226000547409058,
+        "frame_index": 42,
+        "frame_time_ms": 5.037415981292725,
+        "gpu_total_ms": 4.514815807342529
+      },
+      {
+        "cpu_total_ms": 0.5328999757766724,
+        "frame_index": 43,
+        "frame_time_ms": 4.489635944366455,
+        "gpu_total_ms": 3.956735849380493
+      },
+      {
+        "cpu_total_ms": 0.6023999452590942,
+        "frame_index": 44,
+        "frame_time_ms": 4.232480049133301,
+        "gpu_total_ms": 3.630079984664917
+      },
+      {
+        "cpu_total_ms": 0.5810999870300293,
+        "frame_index": 45,
+        "frame_time_ms": 4.039147853851318,
+        "gpu_total_ms": 3.458047866821289
+      },
+      {
+        "cpu_total_ms": 0.5821999907493591,
+        "frame_index": 46,
+        "frame_time_ms": 4.686391830444336,
+        "gpu_total_ms": 4.104191780090332
+      },
+      {
+        "cpu_total_ms": 0.4253999888896942,
+        "frame_index": 47,
+        "frame_time_ms": 4.06879186630249,
+        "gpu_total_ms": 3.6433918476104736
+      },
+      {
+        "cpu_total_ms": 0.3409000039100647,
+        "frame_index": 48,
+        "frame_time_ms": 4.719523906707764,
+        "gpu_total_ms": 4.378623962402344
+      },
+      {
+        "cpu_total_ms": 0.45989999175071716,
+        "frame_index": 49,
+        "frame_time_ms": 4.6695637702941895,
+        "gpu_total_ms": 4.2096638679504395
+      },
+      {
+        "cpu_total_ms": 0.49060001969337463,
+        "frame_index": 50,
+        "frame_time_ms": 4.993127822875977,
+        "gpu_total_ms": 4.502527713775635
+      },
+      {
+        "cpu_total_ms": 0.6881999969482422,
+        "frame_index": 51,
+        "frame_time_ms": 3.764295816421509,
+        "gpu_total_ms": 3.0760958194732666
+      },
+      {
+        "cpu_total_ms": 1.0062000751495361,
+        "frame_index": 52,
+        "frame_time_ms": 6.175352096557617,
+        "gpu_total_ms": 5.16915225982666
+      },
+      {
+        "cpu_total_ms": 0.9616999626159668,
+        "frame_index": 53,
+        "frame_time_ms": 5.306532382965088,
+        "gpu_total_ms": 4.344832420349121
+      },
+      {
+        "cpu_total_ms": 0.3960000276565552,
+        "frame_index": 54,
+        "frame_time_ms": 4.504288196563721,
+        "gpu_total_ms": 4.108288288116455
+      },
+      {
+        "cpu_total_ms": 0.47130003571510315,
+        "frame_index": 55,
+        "frame_time_ms": 5.0496039390563965,
+        "gpu_total_ms": 4.578303813934326
+      },
+      {
+        "cpu_total_ms": 0.44999998807907104,
+        "frame_index": 56,
+        "frame_time_ms": 4.811215877532959,
+        "gpu_total_ms": 4.361216068267822
+      },
+      {
+        "cpu_total_ms": 0.5297000408172607,
+        "frame_index": 57,
+        "frame_time_ms": 3.7501800060272217,
+        "gpu_total_ms": 3.220479965209961
+      },
+      {
+        "cpu_total_ms": 0.4822999835014343,
+        "frame_index": 58,
+        "frame_time_ms": 5.045243740081787,
+        "gpu_total_ms": 4.562943935394287
+      },
+      {
+        "cpu_total_ms": 0.5288000106811523,
+        "frame_index": 59,
+        "frame_time_ms": 4.805024147033691,
+        "gpu_total_ms": 4.276224136352539
+      },
+      {
+        "cpu_total_ms": 0.48330000042915344,
+        "frame_index": 60,
+        "frame_time_ms": 3.678179979324341,
+        "gpu_total_ms": 3.1948800086975098
+      },
+      {
+        "cpu_total_ms": 0.7026000022888184,
+        "frame_index": 61,
+        "frame_time_ms": 5.33517599105835,
+        "gpu_total_ms": 4.632575988769531
+      },
+      {
+        "cpu_total_ms": 0.48089995980262756,
+        "frame_index": 62,
+        "frame_time_ms": 3.5918118953704834,
+        "gpu_total_ms": 3.1109118461608887
+      },
+      {
+        "cpu_total_ms": 0.40389999747276306,
+        "frame_index": 63,
+        "frame_time_ms": 4.421051979064941,
+        "gpu_total_ms": 4.017151832580566
+      },
+      {
+        "cpu_total_ms": 0.23359999060630798,
+        "frame_index": 64,
+        "frame_time_ms": 3.7039358615875244,
+        "gpu_total_ms": 3.4703359603881836
+      },
+      {
+        "cpu_total_ms": 0.2173999845981598,
+        "frame_index": 65,
+        "frame_time_ms": 4.256951808929443,
+        "gpu_total_ms": 4.039551734924316
+      },
+      {
+        "cpu_total_ms": 0.25029999017715454,
+        "frame_index": 66,
+        "frame_time_ms": 4.754012107849121,
+        "gpu_total_ms": 4.503712177276611
+      },
+      {
+        "cpu_total_ms": 0.30080002546310425,
+        "frame_index": 67,
+        "frame_time_ms": 4.7572479248046875,
+        "gpu_total_ms": 4.456448078155518
+      },
+      {
+        "cpu_total_ms": 0.535099983215332,
+        "frame_index": 68,
+        "frame_time_ms": 4.865596294403076,
+        "gpu_total_ms": 4.330496311187744
+      },
+      {
+        "cpu_total_ms": 0.3319000005722046,
+        "frame_index": 69,
+        "frame_time_ms": 4.056188106536865,
+        "gpu_total_ms": 3.724287986755371
+      },
+      {
+        "cpu_total_ms": 0.517300009727478,
+        "frame_index": 70,
+        "frame_time_ms": 4.905139923095703,
+        "gpu_total_ms": 4.3878397941589355
+      },
+      {
+        "cpu_total_ms": 0.5049999952316284,
+        "frame_index": 71,
+        "frame_time_ms": 3.5995278358459473,
+        "gpu_total_ms": 3.0945279598236084
+      },
+      {
+        "cpu_total_ms": 0.3467000126838684,
+        "frame_index": 72,
+        "frame_time_ms": 3.7105398178100586,
+        "gpu_total_ms": 3.363839864730835
+      },
+      {
+        "cpu_total_ms": 0.49219998717308044,
+        "frame_index": 73,
+        "frame_time_ms": 3.5252878665924072,
+        "gpu_total_ms": 3.033087968826294
+      },
+      {
+        "cpu_total_ms": 0.7311999797821045,
+        "frame_index": 74,
+        "frame_time_ms": 4.964415550231934,
+        "gpu_total_ms": 4.233215808868408
+      },
+      {
+        "cpu_total_ms": 0.20899999141693115,
+        "frame_index": 75,
+        "frame_time_ms": 3.623015880584717,
+        "gpu_total_ms": 3.414015769958496
+      },
+      {
+        "cpu_total_ms": 0.34940001368522644,
+        "frame_index": 76,
+        "frame_time_ms": 3.36405611038208,
+        "gpu_total_ms": 3.0146560668945313
+      },
+      {
+        "cpu_total_ms": 0.3666999936103821,
+        "frame_index": 77,
+        "frame_time_ms": 5.940331935882568,
+        "gpu_total_ms": 5.573631763458252
+      },
+      {
+        "cpu_total_ms": 0.21980001032352448,
+        "frame_index": 78,
+        "frame_time_ms": 4.406935691833496,
+        "gpu_total_ms": 4.187135696411133
+      },
+      {
+        "cpu_total_ms": 0.511900007724762,
+        "frame_index": 79,
+        "frame_time_ms": 4.32118034362793,
+        "gpu_total_ms": 3.8092801570892334
+      },
+      {
+        "cpu_total_ms": 0.34170001745224,
+        "frame_index": 80,
+        "frame_time_ms": 4.641476154327393,
+        "gpu_total_ms": 4.299776077270508
+      },
+      {
+        "cpu_total_ms": 0.5396000146865845,
+        "frame_index": 81,
+        "frame_time_ms": 4.38267183303833,
+        "gpu_total_ms": 3.843071937561035
+      },
+      {
+        "cpu_total_ms": 0.5801999568939209,
+        "frame_index": 82,
+        "frame_time_ms": 4.743783950805664,
+        "gpu_total_ms": 4.163583755493164
+      },
+      {
+        "cpu_total_ms": 0.33799999952316284,
+        "frame_index": 83,
+        "frame_time_ms": 4.501584053039551,
+        "gpu_total_ms": 4.163584232330322
+      },
+      {
+        "cpu_total_ms": 0.5863999724388123,
+        "frame_index": 84,
+        "frame_time_ms": 4.479647636413574,
+        "gpu_total_ms": 3.8932478427886963
+      },
+      {
+        "cpu_total_ms": 0.5483999848365784,
+        "frame_index": 85,
+        "frame_time_ms": 5.067312240600586,
+        "gpu_total_ms": 4.518912315368652
+      },
+      {
+        "cpu_total_ms": 0.3813999891281128,
+        "frame_index": 86,
+        "frame_time_ms": 3.5383920669555664,
+        "gpu_total_ms": 3.156991958618164
+      },
+      {
+        "cpu_total_ms": 0.34360000491142273,
+        "frame_index": 87,
+        "frame_time_ms": 5.743152141571045,
+        "gpu_total_ms": 5.399552345275879
+      },
+      {
+        "cpu_total_ms": 0.4559999704360962,
+        "frame_index": 88,
+        "frame_time_ms": 5.065023899078369,
+        "gpu_total_ms": 4.6090240478515625
+      },
+      {
+        "cpu_total_ms": 0.4474000036716461,
+        "frame_index": 89,
+        "frame_time_ms": 3.519400119781494,
+        "gpu_total_ms": 3.072000026702881
+      },
+      {
+        "cpu_total_ms": 0.4592999815940857,
+        "frame_index": 90,
+        "frame_time_ms": 4.402723789215088,
+        "gpu_total_ms": 3.9434237480163574
+      },
+      {
+        "cpu_total_ms": 0.4097000062465668,
+        "frame_index": 91,
+        "frame_time_ms": 3.7448678016662598,
+        "gpu_total_ms": 3.33516788482666
+      },
+      {
+        "cpu_total_ms": 0.5125000476837158,
+        "frame_index": 92,
+        "frame_time_ms": 3.5978119373321533,
+        "gpu_total_ms": 3.0853118896484375
+      },
+      {
+        "cpu_total_ms": 0.4925000071525574,
+        "frame_index": 93,
+        "frame_time_ms": 4.791252136230469,
+        "gpu_total_ms": 4.298752307891846
+      },
+      {
+        "cpu_total_ms": 0.6085999608039856,
+        "frame_index": 94,
+        "frame_time_ms": 4.472151756286621,
+        "gpu_total_ms": 3.8635518550872803
+      },
+      {
+        "cpu_total_ms": 0.6113000512123108,
+        "frame_index": 95,
+        "frame_time_ms": 5.135332107543945,
+        "gpu_total_ms": 4.524032115936279
+      },
+      {
+        "cpu_total_ms": 0.6172000169754028,
+        "frame_index": 96,
+        "frame_time_ms": 4.905711650848389,
+        "gpu_total_ms": 4.288511753082275
+      },
+      {
+        "cpu_total_ms": 0.5382000207901001,
+        "frame_index": 97,
+        "frame_time_ms": 4.322904109954834,
+        "gpu_total_ms": 3.7847042083740234
+      },
+      {
+        "cpu_total_ms": 0.5748000144958496,
+        "frame_index": 98,
+        "frame_time_ms": 4.656464099884033,
+        "gpu_total_ms": 4.081664085388184
+      },
+      {
+        "cpu_total_ms": 0.5450000166893005,
+        "frame_index": 99,
+        "frame_time_ms": 3.4756879806518555,
+        "gpu_total_ms": 2.93068790435791
+      },
+      {
+        "cpu_total_ms": 0.5340999960899353,
+        "frame_index": 100,
+        "frame_time_ms": 3.9440197944641113,
+        "gpu_total_ms": 3.4099197387695313
+      },
+      {
+        "cpu_total_ms": 0.5852000117301941,
+        "frame_index": 101,
+        "frame_time_ms": 4.678127765655518,
+        "gpu_total_ms": 4.092927932739258
+      },
+      {
+        "cpu_total_ms": 0.583899974822998,
+        "frame_index": 102,
+        "frame_time_ms": 3.522779941558838,
+        "gpu_total_ms": 2.93887996673584
+      },
+      {
+        "cpu_total_ms": 0.5746000409126282,
+        "frame_index": 103,
+        "frame_time_ms": 4.985992431640625,
+        "gpu_total_ms": 4.4113922119140625
+      },
+      {
+        "cpu_total_ms": 0.45090001821517944,
+        "frame_index": 104,
+        "frame_time_ms": 3.394899845123291,
+        "gpu_total_ms": 2.943999767303467
+      },
+      {
+        "cpu_total_ms": 0.7781000733375549,
+        "frame_index": 105,
+        "frame_time_ms": 5.899123668670654,
+        "gpu_total_ms": 5.121023654937744
+      },
+      {
+        "cpu_total_ms": 0.46729999780654907,
+        "frame_index": 106,
+        "frame_time_ms": 3.672419786453247,
+        "gpu_total_ms": 3.2051198482513428
+      },
+      {
+        "cpu_total_ms": 0.4203000068664551,
+        "frame_index": 107,
+        "frame_time_ms": 3.3561079502105713,
+        "gpu_total_ms": 2.935807943344116
+      },
+      {
+        "cpu_total_ms": 0.26589998602867126,
+        "frame_index": 108,
+        "frame_time_ms": 4.687532424926758,
+        "gpu_total_ms": 4.421632289886475
+      },
+      {
+        "cpu_total_ms": 0.27059999108314514,
+        "frame_index": 109,
+        "frame_time_ms": 4.107527732849121,
+        "gpu_total_ms": 3.836927890777588
+      },
+      {
+        "cpu_total_ms": 0.3085000216960907,
+        "frame_index": 110,
+        "frame_time_ms": 3.3385159969329834,
+        "gpu_total_ms": 3.0300159454345703
+      },
+      {
+        "cpu_total_ms": 0.3393000066280365,
+        "frame_index": 111,
+        "frame_time_ms": 4.50902795791626,
+        "gpu_total_ms": 4.169727802276611
+      },
+      {
+        "cpu_total_ms": 0.37960001826286316,
+        "frame_index": 112,
+        "frame_time_ms": 3.3440799713134766,
+        "gpu_total_ms": 2.964479923248291
+      },
+      {
+        "cpu_total_ms": 0.42260000109672546,
+        "frame_index": 113,
+        "frame_time_ms": 3.8632400035858154,
+        "gpu_total_ms": 3.4406399726867676
+      },
+      {
+        "cpu_total_ms": 0.3715999722480774,
+        "frame_index": 114,
+        "frame_time_ms": 3.415951728820801,
+        "gpu_total_ms": 3.044351816177368
+      },
+      {
+        "cpu_total_ms": 0.3111000061035156,
+        "frame_index": 115,
+        "frame_time_ms": 4.2903642654418945,
+        "gpu_total_ms": 3.9792640209198
+      },
+      {
+        "cpu_total_ms": 0.35519999265670776,
+        "frame_index": 116,
+        "frame_time_ms": 3.814271926879883,
+        "gpu_total_ms": 3.4590718746185303
+      },
+      {
+        "cpu_total_ms": 0.24180002510547638,
+        "frame_index": 117,
+        "frame_time_ms": 3.418247938156128,
+        "gpu_total_ms": 3.176447868347168
+      },
+      {
+        "cpu_total_ms": 0.2793999910354614,
+        "frame_index": 118,
+        "frame_time_ms": 3.6400718688964844,
+        "gpu_total_ms": 3.3606719970703125
+      },
+      {
+        "cpu_total_ms": 0.2997000217437744,
+        "frame_index": 119,
+        "frame_time_ms": 4.530867576599121,
+        "gpu_total_ms": 4.231167793273926
+      },
+      {
+        "cpu_total_ms": 0.3184000253677368,
+        "frame_index": 120,
+        "frame_time_ms": 3.7037439346313477,
+        "gpu_total_ms": 3.3853440284729004
+      },
+      {
+        "cpu_total_ms": 0.40529999136924744,
+        "frame_index": 121,
+        "frame_time_ms": 4.64056396484375,
+        "gpu_total_ms": 4.235263824462891
+      },
+      {
+        "cpu_total_ms": 0.36890000104904175,
+        "frame_index": 122,
+        "frame_time_ms": 4.228355884552002,
+        "gpu_total_ms": 3.8594560623168945
+      },
+      {
+        "cpu_total_ms": 0.6901999711990356,
+        "frame_index": 123,
+        "frame_time_ms": 3.9403438568115234,
+        "gpu_total_ms": 3.2501440048217773
+      },
+      {
+        "cpu_total_ms": 0.5920000076293945,
+        "frame_index": 124,
+        "frame_time_ms": 6.571135997772217,
+        "gpu_total_ms": 5.979135990142822
+      },
+      {
+        "cpu_total_ms": 0.5656999945640564,
+        "frame_index": 125,
+        "frame_time_ms": 3.8363559246063232,
+        "gpu_total_ms": 3.270655870437622
+      },
+      {
+        "cpu_total_ms": 0.5241000056266785,
+        "frame_index": 126,
+        "frame_time_ms": 4.686659812927246,
+        "gpu_total_ms": 4.162559986114502
+      },
+      {
+        "cpu_total_ms": 0.49540001153945923,
+        "frame_index": 127,
+        "frame_time_ms": 4.6344075202941895,
+        "gpu_total_ms": 4.139007568359375
+      },
+      {
+        "cpu_total_ms": 0.4342999756336212,
+        "frame_index": 128,
+        "frame_time_ms": 4.618363857269287,
+        "gpu_total_ms": 4.184063911437988
+      },
+      {
+        "cpu_total_ms": 0.4765999913215637,
+        "frame_index": 129,
+        "frame_time_ms": 3.8445358276367188,
+        "gpu_total_ms": 3.3679358959198
+      },
+      {
+        "cpu_total_ms": 0.47859999537467957,
+        "frame_index": 130,
+        "frame_time_ms": 5.473671913146973,
+        "gpu_total_ms": 4.995071887969971
+      },
+      {
+        "cpu_total_ms": 0.4861999750137329,
+        "frame_index": 131,
+        "frame_time_ms": 4.4419121742248535,
+        "gpu_total_ms": 3.955712080001831
+      },
+      {
+        "cpu_total_ms": 0.47829997539520264,
+        "frame_index": 132,
+        "frame_time_ms": 4.843612194061279,
+        "gpu_total_ms": 4.365312099456787
+      },
+      {
+        "cpu_total_ms": 0.41860002279281616,
+        "frame_index": 133,
+        "frame_time_ms": 3.491624116897583,
+        "gpu_total_ms": 3.073024034500122
+      },
+      {
+        "cpu_total_ms": 0.5115000009536743,
+        "frame_index": 134,
+        "frame_time_ms": 5.559820652008057,
+        "gpu_total_ms": 5.048320770263672
+      },
+      {
+        "cpu_total_ms": 0.5,
+        "frame_index": 135,
+        "frame_time_ms": 3.489055871963501,
+        "gpu_total_ms": 2.989055871963501
+      },
+      {
+        "cpu_total_ms": 0.4837999939918518,
+        "frame_index": 136,
+        "frame_time_ms": 4.644311904907227,
+        "gpu_total_ms": 4.1605119705200195
+      },
+      {
+        "cpu_total_ms": 0.4975000321865082,
+        "frame_index": 137,
+        "frame_time_ms": 3.778395891189575,
+        "gpu_total_ms": 3.280895948410034
+      },
+      {
+        "cpu_total_ms": 0.40800005197525024,
+        "frame_index": 138,
+        "frame_time_ms": 3.379647970199585,
+        "gpu_total_ms": 2.9716479778289795
+      },
+      {
+        "cpu_total_ms": 0.5564999580383301,
+        "frame_index": 139,
+        "frame_time_ms": 4.884948253631592,
+        "gpu_total_ms": 4.328448295593262
+      },
+      {
+        "cpu_total_ms": 0.44290000200271606,
+        "frame_index": 140,
+        "frame_time_ms": 5.558804035186768,
+        "gpu_total_ms": 5.115903854370117
+      },
+      {
+        "cpu_total_ms": 0.539900004863739,
+        "frame_index": 141,
+        "frame_time_ms": 4.462843894958496,
+        "gpu_total_ms": 3.9229438304901123
+      },
+      {
+        "cpu_total_ms": 0.5108000040054321,
+        "frame_index": 142,
+        "frame_time_ms": 4.675407886505127,
+        "gpu_total_ms": 4.164608001708984
+      },
+      {
+        "cpu_total_ms": 0.4810999929904938,
+        "frame_index": 143,
+        "frame_time_ms": 4.555595874786377,
+        "gpu_total_ms": 4.074495792388916
+      },
+      {
+        "cpu_total_ms": 0.5360999703407288,
+        "frame_index": 144,
+        "frame_time_ms": 5.089828014373779,
+        "gpu_total_ms": 4.553728103637695
+      },
+      {
+        "cpu_total_ms": 0.5131000280380249,
+        "frame_index": 145,
+        "frame_time_ms": 3.766347885131836,
+        "gpu_total_ms": 3.2532477378845215
+      },
+      {
+        "cpu_total_ms": 0.4836999773979187,
+        "frame_index": 146,
+        "frame_time_ms": 5.4255242347717285,
+        "gpu_total_ms": 4.941824436187744
+      },
+      {
+        "cpu_total_ms": 0.5295000076293945,
+        "frame_index": 147,
+        "frame_time_ms": 4.903003692626953,
+        "gpu_total_ms": 4.373503684997559
+      },
+      {
+        "cpu_total_ms": 0.47099998593330383,
+        "frame_index": 148,
+        "frame_time_ms": 3.409879684448242,
+        "gpu_total_ms": 2.9388797283172607
+      },
+      {
+        "cpu_total_ms": 0.4779999852180481,
+        "frame_index": 149,
+        "frame_time_ms": 3.485487699508667,
+        "gpu_total_ms": 3.0074877738952637
+      },
+      {
+        "cpu_total_ms": 0.4625999927520752,
+        "frame_index": 150,
+        "frame_time_ms": 3.3984079360961914,
+        "gpu_total_ms": 2.935807943344116
+      },
+      {
+        "cpu_total_ms": 0.2937000095844269,
+        "frame_index": 151,
+        "frame_time_ms": 3.240771770477295,
+        "gpu_total_ms": 2.9470717906951904
+      },
+      {
+        "cpu_total_ms": 0.3060999810695648,
+        "frame_index": 152,
+        "frame_time_ms": 3.4907400608062744,
+        "gpu_total_ms": 3.1846401691436768
+      },
+      {
+        "cpu_total_ms": 0.37780001759529114,
+        "frame_index": 153,
+        "frame_time_ms": 3.2214481830596924,
+        "gpu_total_ms": 2.8436481952667236
+      },
+      {
+        "cpu_total_ms": 0.2962000370025635,
+        "frame_index": 154,
+        "frame_time_ms": 3.46445631980896,
+        "gpu_total_ms": 3.1682562828063965
+      },
+      {
+        "cpu_total_ms": 0.27619999647140503,
+        "frame_index": 155,
+        "frame_time_ms": 4.43671178817749,
+        "gpu_total_ms": 4.1605119705200195
+      },
+      {
+        "cpu_total_ms": 0.26260000467300415,
+        "frame_index": 156,
+        "frame_time_ms": 3.1420881748199463,
+        "gpu_total_ms": 2.879488229751587
+      },
+      {
+        "cpu_total_ms": 0.2953000068664551,
+        "frame_index": 157,
+        "frame_time_ms": 3.476868152618408,
+        "gpu_total_ms": 3.181568145751953
+      },
+      {
+        "cpu_total_ms": 0.30570003390312195,
+        "frame_index": 158,
+        "frame_time_ms": 4.202020168304443,
+        "gpu_total_ms": 3.896320104598999
+      },
+      {
+        "cpu_total_ms": 0.31949999928474426,
+        "frame_index": 159,
+        "frame_time_ms": 3.713036060333252,
+        "gpu_total_ms": 3.39353609085083
+      },
+      {
+        "cpu_total_ms": 0.2612999975681305,
+        "frame_index": 160,
+        "frame_time_ms": 5.126323699951172,
+        "gpu_total_ms": 4.865023612976074
+      },
+      {
+        "cpu_total_ms": 0.3611000180244446,
+        "frame_index": 161,
+        "frame_time_ms": 4.4284281730651855,
+        "gpu_total_ms": 4.067327976226807
+      },
+      {
+        "cpu_total_ms": 0.46539998054504395,
+        "frame_index": 162,
+        "frame_time_ms": 3.853815793991089,
+        "gpu_total_ms": 3.388415813446045
+      },
+      {
+        "cpu_total_ms": 0.4191000163555145,
+        "frame_index": 163,
+        "frame_time_ms": 3.5924758911132813,
+        "gpu_total_ms": 3.1733758449554443
+      },
+      {
+        "cpu_total_ms": 0.3840000033378601,
+        "frame_index": 164,
+        "frame_time_ms": 3.7806079387664795,
+        "gpu_total_ms": 3.3966078758239746
+      },
+      {
+        "cpu_total_ms": 0.27079999446868896,
+        "frame_index": 165,
+        "frame_time_ms": 5.584336757659912,
+        "gpu_total_ms": 5.313536643981934
+      },
+      {
+        "cpu_total_ms": 0.25929999351501465,
+        "frame_index": 166,
+        "frame_time_ms": 4.042980194091797,
+        "gpu_total_ms": 3.783679962158203
+      },
+      {
+        "cpu_total_ms": 0.2971999943256378,
+        "frame_index": 167,
+        "frame_time_ms": 4.623600006103516,
+        "gpu_total_ms": 4.326399803161621
+      },
+      {
+        "cpu_total_ms": 0.2892000079154968,
+        "frame_index": 168,
+        "frame_time_ms": 4.3872480392456055,
+        "gpu_total_ms": 4.098048210144043
+      },
+      {
+        "cpu_total_ms": 0.3061000108718872,
+        "frame_index": 169,
+        "frame_time_ms": 3.3094921112060547,
+        "gpu_total_ms": 3.003391981124878
+      },
+      {
+        "cpu_total_ms": 0.265999972820282,
+        "frame_index": 170,
+        "frame_time_ms": 4.357903957366943,
+        "gpu_total_ms": 4.091904163360596
+      },
+      {
+        "cpu_total_ms": 0.3174999952316284,
+        "frame_index": 171,
+        "frame_time_ms": 5.226556301116943,
+        "gpu_total_ms": 4.909056186676025
+      },
+      {
+        "cpu_total_ms": 0.4104999601840973,
+        "frame_index": 172,
+        "frame_time_ms": 3.7999398708343506,
+        "gpu_total_ms": 3.389439821243286
+      },
+      {
+        "cpu_total_ms": 0.35409995913505554,
+        "frame_index": 173,
+        "frame_time_ms": 3.2540676593780518,
+        "gpu_total_ms": 2.899967670440674
+      },
+      {
+        "cpu_total_ms": 0.49400001764297485,
+        "frame_index": 174,
+        "frame_time_ms": 5.002671718597412,
+        "gpu_total_ms": 4.508671760559082
+      },
+      {
+        "cpu_total_ms": 0.259799987077713,
+        "frame_index": 175,
+        "frame_time_ms": 4.02402400970459,
+        "gpu_total_ms": 3.76422381401062
+      },
+      {
+        "cpu_total_ms": 0.3781000077724457,
+        "frame_index": 176,
+        "frame_time_ms": 4.534515380859375,
+        "gpu_total_ms": 4.1564154624938965
+      },
+      {
+        "cpu_total_ms": 0.4090000092983246,
+        "frame_index": 177,
+        "frame_time_ms": 3.619239568710327,
+        "gpu_total_ms": 3.2102396488189697
+      },
+      {
+        "cpu_total_ms": 0.4196000099182129,
+        "frame_index": 178,
+        "frame_time_ms": 4.197135925292969,
+        "gpu_total_ms": 3.777535915374756
+      },
+      {
+        "cpu_total_ms": 0.4261000156402588,
+        "frame_index": 179,
+        "frame_time_ms": 4.761715888977051,
+        "gpu_total_ms": 4.335616111755371
+      },
+      {
+        "cpu_total_ms": 0.3522999584674835,
+        "frame_index": 180,
+        "frame_time_ms": 4.41450834274292,
+        "gpu_total_ms": 4.06220817565918
+      },
+      {
+        "cpu_total_ms": 0.3587999939918518,
+        "frame_index": 181,
+        "frame_time_ms": 3.4840478897094727,
+        "gpu_total_ms": 3.1252479553222656
+      },
+      {
+        "cpu_total_ms": 0.3708000183105469,
+        "frame_index": 182,
+        "frame_time_ms": 5.893232345581055,
+        "gpu_total_ms": 5.522432327270508
+      },
+      {
+        "cpu_total_ms": 0.414900004863739,
+        "frame_index": 183,
+        "frame_time_ms": 3.332275867462158,
+        "gpu_total_ms": 2.9173758029937744
+      },
+      {
+        "cpu_total_ms": 0.4860000014305115,
+        "frame_index": 184,
+        "frame_time_ms": 4.660848140716553,
+        "gpu_total_ms": 4.1748480796813965
+      },
+      {
+        "cpu_total_ms": 0.40629997849464417,
+        "frame_index": 185,
+        "frame_time_ms": 3.329819917678833,
+        "gpu_total_ms": 2.9235198497772217
+      },
+      {
+        "cpu_total_ms": 0.41199997067451477,
+        "frame_index": 186,
+        "frame_time_ms": 3.275103807449341,
+        "gpu_total_ms": 2.8631038665771484
+      },
+      {
+        "cpu_total_ms": 0.31349998712539673,
+        "frame_index": 187,
+        "frame_time_ms": 4.631707668304443,
+        "gpu_total_ms": 4.318207740783691
+      },
+      {
+        "cpu_total_ms": 0.258400022983551,
+        "frame_index": 188,
+        "frame_time_ms": 3.012960195541382,
+        "gpu_total_ms": 2.7545602321624756
+      },
+      {
+        "cpu_total_ms": 0.26109999418258667,
+        "frame_index": 189,
+        "frame_time_ms": 5.403467655181885,
+        "gpu_total_ms": 5.142367839813232
+      },
+      {
+        "cpu_total_ms": 0.4357999861240387,
+        "frame_index": 190,
+        "frame_time_ms": 4.052567958831787,
+        "gpu_total_ms": 3.6167681217193604
+      },
+      {
+        "cpu_total_ms": 0.3545999825000763,
+        "frame_index": 191,
+        "frame_time_ms": 3.1296398639678955,
+        "gpu_total_ms": 2.7750399112701416
+      },
+      {
+        "cpu_total_ms": 0.36079996824264526,
+        "frame_index": 192,
+        "frame_time_ms": 3.473759651184082,
+        "gpu_total_ms": 3.112959623336792
+      },
+      {
+        "cpu_total_ms": 0.3144000172615051,
+        "frame_index": 193,
+        "frame_time_ms": 3.9844157695770264,
+        "gpu_total_ms": 3.670015811920166
+      },
+      {
+        "cpu_total_ms": 0.21060000360012054,
+        "frame_index": 194,
+        "frame_time_ms": 3.3337998390197754,
+        "gpu_total_ms": 3.123199939727783
+      },
+      {
+        "cpu_total_ms": 0.3650999665260315,
+        "frame_index": 195,
+        "frame_time_ms": 5.095884323120117,
+        "gpu_total_ms": 4.7307844161987305
+      },
+      {
+        "cpu_total_ms": 0.44460001587867737,
+        "frame_index": 196,
+        "frame_time_ms": 3.555511951446533,
+        "gpu_total_ms": 3.1109118461608887
+      },
+      {
+        "cpu_total_ms": 0.430899977684021,
+        "frame_index": 197,
+        "frame_time_ms": 3.584819793701172,
+        "gpu_total_ms": 3.1539196968078613
+      },
+      {
+        "cpu_total_ms": 0.25290000438690186,
+        "frame_index": 198,
+        "frame_time_ms": 5.053411960601807,
+        "gpu_total_ms": 4.800511837005615
+      },
+      {
+        "cpu_total_ms": 0.5535000562667847,
+        "frame_index": 199,
+        "frame_time_ms": 3.7606682777404785,
+        "gpu_total_ms": 3.2071681022644043
+      },
+      {
+        "cpu_total_ms": 0.4269000291824341,
+        "frame_index": 200,
+        "frame_time_ms": 3.314579963684082,
+        "gpu_total_ms": 2.8876800537109375
+      },
+      {
+        "cpu_total_ms": 0.5177000761032104,
+        "frame_index": 201,
+        "frame_time_ms": 4.765252113342285,
+        "gpu_total_ms": 4.247551918029785
+      },
+      {
+        "cpu_total_ms": 0.4788999855518341,
+        "frame_index": 202,
+        "frame_time_ms": 3.2447237968444824,
+        "gpu_total_ms": 2.7658238410949707
+      },
+      {
+        "cpu_total_ms": 0.3693999946117401,
+        "frame_index": 203,
+        "frame_time_ms": 4.0097198486328125,
+        "gpu_total_ms": 3.64031982421875
+      },
+      {
+        "cpu_total_ms": 0.2256999909877777,
+        "frame_index": 204,
+        "frame_time_ms": 3.4553956985473633,
+        "gpu_total_ms": 3.2296957969665527
+      },
+      {
+        "cpu_total_ms": 0.25390002131462097,
+        "frame_index": 205,
+        "frame_time_ms": 2.955212116241455,
+        "gpu_total_ms": 2.7013120651245117
+      },
+      {
+        "cpu_total_ms": 0.23750001192092896,
+        "frame_index": 206,
+        "frame_time_ms": 5.342107772827148,
+        "gpu_total_ms": 5.104607582092285
+      },
+      {
+        "cpu_total_ms": 0.359499990940094,
+        "frame_index": 207,
+        "frame_time_ms": 3.0628600120544434,
+        "gpu_total_ms": 2.703360080718994
+      },
+      {
+        "cpu_total_ms": 0.5358999967575073,
+        "frame_index": 208,
+        "frame_time_ms": 4.611420154571533,
+        "gpu_total_ms": 4.075520038604736
+      },
+      {
+        "cpu_total_ms": 0.5641999840736389,
+        "frame_index": 209,
+        "frame_time_ms": 3.321831703186035,
+        "gpu_total_ms": 2.757631778717041
+      },
+      {
+        "cpu_total_ms": 0.4298999607563019,
+        "frame_index": 210,
+        "frame_time_ms": 4.314955711364746,
+        "gpu_total_ms": 3.8850557804107666
+      },
+      {
+        "cpu_total_ms": 0.42969998717308044,
+        "frame_index": 211,
+        "frame_time_ms": 3.491459608078003,
+        "gpu_total_ms": 3.0617597103118896
+      },
+      {
+        "cpu_total_ms": 0.388700008392334,
+        "frame_index": 212,
+        "frame_time_ms": 4.898396015167236,
+        "gpu_total_ms": 4.509696006774902
+      },
+      {
+        "cpu_total_ms": 0.45229998230934143,
+        "frame_index": 213,
+        "frame_time_ms": 4.537035942077637,
+        "gpu_total_ms": 4.084735870361328
+      },
+      {
+        "cpu_total_ms": 0.5432999730110168,
+        "frame_index": 214,
+        "frame_time_ms": 3.3019556999206543,
+        "gpu_total_ms": 2.7586557865142822
+      },
+      {
+        "cpu_total_ms": 0.5321999788284302,
+        "frame_index": 215,
+        "frame_time_ms": 4.532967567443848,
+        "gpu_total_ms": 4.000767707824707
+      },
+      {
+        "cpu_total_ms": 0.5055000185966492,
+        "frame_index": 216,
+        "frame_time_ms": 3.258012056350708,
+        "gpu_total_ms": 2.752511978149414
+      },
+      {
+        "cpu_total_ms": 0.4708999991416931,
+        "frame_index": 217,
+        "frame_time_ms": 4.945780277252197,
+        "gpu_total_ms": 4.474880218505859
+      },
+      {
+        "cpu_total_ms": 0.475600004196167,
+        "frame_index": 218,
+        "frame_time_ms": 4.055503845214844,
+        "gpu_total_ms": 3.579904079437256
+      },
+      {
+        "cpu_total_ms": 0.3165000081062317,
+        "frame_index": 219,
+        "frame_time_ms": 4.5712199211120605,
+        "gpu_total_ms": 4.2547197341918945
+      },
+      {
+        "cpu_total_ms": 0.2924000322818756,
+        "frame_index": 220,
+        "frame_time_ms": 4.643375873565674,
+        "gpu_total_ms": 4.35097599029541
+      },
+      {
+        "cpu_total_ms": 0.3166999816894531,
+        "frame_index": 221,
+        "frame_time_ms": 3.0804758071899414,
+        "gpu_total_ms": 2.7637758255004883
+      },
+      {
+        "cpu_total_ms": 0.31279999017715454,
+        "frame_index": 222,
+        "frame_time_ms": 3.3940157890319824,
+        "gpu_total_ms": 3.0812158584594727
+      },
+      {
+        "cpu_total_ms": 0.32499998807907104,
+        "frame_index": 223,
+        "frame_time_ms": 3.0857036113739014,
+        "gpu_total_ms": 2.7607035636901855
+      },
+      {
+        "cpu_total_ms": 0.3676000237464905,
+        "frame_index": 224,
+        "frame_time_ms": 3.2122716903686523,
+        "gpu_total_ms": 2.8446717262268066
+      },
+      {
+        "cpu_total_ms": 0.44780001044273376,
+        "frame_index": 225,
+        "frame_time_ms": 5.633336544036865,
+        "gpu_total_ms": 5.1855363845825195
+      },
+      {
+        "cpu_total_ms": 0.3782000243663788,
+        "frame_index": 226,
+        "frame_time_ms": 4.319575786590576,
+        "gpu_total_ms": 3.941375732421875
+      },
+      {
+        "cpu_total_ms": 0.41999998688697815,
+        "frame_index": 227,
+        "frame_time_ms": 3.1325759887695313,
+        "gpu_total_ms": 2.712575912475586
+      },
+      {
+        "cpu_total_ms": 0.3856000006198883,
+        "frame_index": 228,
+        "frame_time_ms": 3.100224018096924,
+        "gpu_total_ms": 2.7146239280700684
+      },
+      {
+        "cpu_total_ms": 0.4619000256061554,
+        "frame_index": 229,
+        "frame_time_ms": 3.638347864151001,
+        "gpu_total_ms": 3.176447868347168
+      },
+      {
+        "cpu_total_ms": 0.5065000057220459,
+        "frame_index": 230,
+        "frame_time_ms": 3.2129318714141846,
+        "gpu_total_ms": 2.7064318656921387
+      },
+      {
+        "cpu_total_ms": 0.45239999890327454,
+        "frame_index": 231,
+        "frame_time_ms": 3.1475679874420166,
+        "gpu_total_ms": 2.6951680183410645
+      },
+      {
+        "cpu_total_ms": 0.5349000692367554,
+        "frame_index": 232,
+        "frame_time_ms": 3.5157642364501953,
+        "gpu_total_ms": 2.9808640480041504
+      },
+      {
+        "cpu_total_ms": 0.4531000256538391,
+        "frame_index": 233,
+        "frame_time_ms": 5.23108434677124,
+        "gpu_total_ms": 4.777984142303467
+      },
+      {
+        "cpu_total_ms": 0.5419000387191772,
+        "frame_index": 234,
+        "frame_time_ms": 4.6143479347229,
+        "gpu_total_ms": 4.072447776794434
+      },
+      {
+        "cpu_total_ms": 0.511400043964386,
+        "frame_index": 235,
+        "frame_time_ms": 4.058536052703857,
+        "gpu_total_ms": 3.547135829925537
+      },
+      {
+        "cpu_total_ms": 0.5330000519752502,
+        "frame_index": 236,
+        "frame_time_ms": 4.4344401359558105,
+        "gpu_total_ms": 3.901439905166626
+      },
+      {
+        "cpu_total_ms": 0.4596000015735626,
+        "frame_index": 237,
+        "frame_time_ms": 3.1394078731536865,
+        "gpu_total_ms": 2.6798079013824463
+      },
+      {
+        "cpu_total_ms": 0.49139997363090515,
+        "frame_index": 238,
+        "frame_time_ms": 5.759880065917969,
+        "gpu_total_ms": 5.26848030090332
+      },
+      {
+        "cpu_total_ms": 0.6456000208854675,
+        "frame_index": 239,
+        "frame_time_ms": 3.8681280612945557,
+        "gpu_total_ms": 3.2225279808044434
+      },
+      {
+        "cpu_total_ms": 0.48510006070137024,
+        "frame_index": 240,
+        "frame_time_ms": 5.135084629058838,
+        "gpu_total_ms": 4.649984359741211
+      },
+      {
+        "cpu_total_ms": 0.5182000398635864,
+        "frame_index": 241,
+        "frame_time_ms": 4.609079837799072,
+        "gpu_total_ms": 4.090879917144775
+      },
+      {
+        "cpu_total_ms": 0.4911000430583954,
+        "frame_index": 242,
+        "frame_time_ms": 4.132443904876709,
+        "gpu_total_ms": 3.6413440704345703
+      },
+      {
+        "cpu_total_ms": 0.4228999614715576,
+        "frame_index": 243,
+        "frame_time_ms": 4.29669189453125,
+        "gpu_total_ms": 3.8737919330596924
+      },
+      {
+        "cpu_total_ms": 0.42500001192092896,
+        "frame_index": 244,
+        "frame_time_ms": 3.131431818008423,
+        "gpu_total_ms": 2.7064318656921387
+      },
+      {
+        "cpu_total_ms": 0.41819998621940613,
+        "frame_index": 245,
+        "frame_time_ms": 4.268439769744873,
+        "gpu_total_ms": 3.8502397537231445
+      },
+      {
+        "cpu_total_ms": 0.4535999596118927,
+        "frame_index": 246,
+        "frame_time_ms": 3.164127826690674,
+        "gpu_total_ms": 2.7105278968811035
+      },
+      {
+        "cpu_total_ms": 0.41880002617836,
+        "frame_index": 247,
+        "frame_time_ms": 3.1303517818450928,
+        "gpu_total_ms": 2.7115516662597656
+      },
+      {
+        "cpu_total_ms": 0.5056999921798706,
+        "frame_index": 248,
+        "frame_time_ms": 4.387683868408203,
+        "gpu_total_ms": 3.881983757019043
+      },
+      {
+        "cpu_total_ms": 0.42980000376701355,
+        "frame_index": 249,
+        "frame_time_ms": 3.147496223449707,
+        "gpu_total_ms": 2.717696189880371
+      },
+      {
+        "cpu_total_ms": 0.4473000168800354,
+        "frame_index": 250,
+        "frame_time_ms": 3.615555763244629,
+        "gpu_total_ms": 3.1682558059692383
+      },
+      {
+        "cpu_total_ms": 0.46160003542900085,
+        "frame_index": 251,
+        "frame_time_ms": 3.1751997470855713,
+        "gpu_total_ms": 2.713599681854248
+      },
+      {
+        "cpu_total_ms": 0.49219998717308044,
+        "frame_index": 252,
+        "frame_time_ms": 3.212967872619629,
+        "gpu_total_ms": 2.7207679748535156
+      },
+      {
+        "cpu_total_ms": 0.4604000151157379,
+        "frame_index": 253,
+        "frame_time_ms": 3.1719517707824707,
+        "gpu_total_ms": 2.7115516662597656
+      },
+      {
+        "cpu_total_ms": 0.37139996886253357,
+        "frame_index": 254,
+        "frame_time_ms": 4.200135707855225,
+        "gpu_total_ms": 3.828735828399658
+      },
+      {
+        "cpu_total_ms": 0.3312000036239624,
+        "frame_index": 255,
+        "frame_time_ms": 3.3960318565368652,
+        "gpu_total_ms": 3.0648317337036133
+      },
+      {
+        "cpu_total_ms": 0.4130999743938446,
+        "frame_index": 256,
+        "frame_time_ms": 3.1441080570220947,
+        "gpu_total_ms": 2.7310080528259277
+      },
+      {
+        "cpu_total_ms": 0.2648000121116638,
+        "frame_index": 257,
+        "frame_time_ms": 5.537376403808594,
+        "gpu_total_ms": 5.272576332092285
+      },
+      {
+        "cpu_total_ms": 0.28110000491142273,
+        "frame_index": 258,
+        "frame_time_ms": 3.189260244369507,
+        "gpu_total_ms": 2.9081602096557617
+      },
+      {
+        "cpu_total_ms": 0.2581000030040741,
+        "frame_index": 259,
+        "frame_time_ms": 5.379123687744141,
+        "gpu_total_ms": 5.121023654937744
+      },
+      {
+        "cpu_total_ms": 0.40779998898506165,
+        "frame_index": 260,
+        "frame_time_ms": 3.903735876083374,
+        "gpu_total_ms": 3.4959359169006348
+      },
+      {
+        "cpu_total_ms": 0.519599974155426,
+        "frame_index": 261,
+        "frame_time_ms": 3.5946717262268066,
+        "gpu_total_ms": 3.0750718116760254
+      },
+      {
+        "cpu_total_ms": 0.6208999752998352,
+        "frame_index": 262,
+        "frame_time_ms": 3.6160998344421387,
+        "gpu_total_ms": 2.9951999187469482
+      },
+      {
+        "cpu_total_ms": 0.4405999779701233,
+        "frame_index": 263,
+        "frame_time_ms": 3.1347436904907227,
+        "gpu_total_ms": 2.694143772125244
+      },
+      {
+        "cpu_total_ms": 0.2928999960422516,
+        "frame_index": 264,
+        "frame_time_ms": 4.151331901550293,
+        "gpu_total_ms": 3.858431816101074
+      },
+      {
+        "cpu_total_ms": 0.28839999437332153,
+        "frame_index": 265,
+        "frame_time_ms": 3.7759201526641846,
+        "gpu_total_ms": 3.487520217895508
+      },
+      {
+        "cpu_total_ms": 0.30230000615119934,
+        "frame_index": 266,
+        "frame_time_ms": 4.5129876136779785,
+        "gpu_total_ms": 4.210687637329102
+      },
+      {
+        "cpu_total_ms": 0.41979995369911194,
+        "frame_index": 267,
+        "frame_time_ms": 3.8942320346832275,
+        "gpu_total_ms": 3.4744319915771484
+      },
+      {
+        "cpu_total_ms": 0.5009999871253967,
+        "frame_index": 268,
+        "frame_time_ms": 4.4986958503723145,
+        "gpu_total_ms": 3.9976959228515625
+      },
+      {
+        "cpu_total_ms": 0.510699987411499,
+        "frame_index": 269,
+        "frame_time_ms": 3.234539747238159,
+        "gpu_total_ms": 2.72383975982666
+      },
+      {
+        "cpu_total_ms": 0.4277999699115753,
+        "frame_index": 270,
+        "frame_time_ms": 4.294424057006836,
+        "gpu_total_ms": 3.866623878479004
+      },
+      {
+        "cpu_total_ms": 0.41450002789497375,
+        "frame_index": 271,
+        "frame_time_ms": 5.567268371582031,
+        "gpu_total_ms": 5.152768135070801
+      },
+      {
+        "cpu_total_ms": 0.4359000027179718,
+        "frame_index": 272,
+        "frame_time_ms": 3.1484758853912354,
+        "gpu_total_ms": 2.712575912475586
+      },
+      {
+        "cpu_total_ms": 0.4253000020980835,
+        "frame_index": 273,
+        "frame_time_ms": 4.323668003082275,
+        "gpu_total_ms": 3.8983678817749023
+      },
+      {
+        "cpu_total_ms": 0.3566000461578369,
+        "frame_index": 274,
+        "frame_time_ms": 3.1173038482666016,
+        "gpu_total_ms": 2.7607038021087646
+      },
+      {
+        "cpu_total_ms": 0.332800030708313,
+        "frame_index": 275,
+        "frame_time_ms": 3.971071720123291,
+        "gpu_total_ms": 3.6382718086242676
+      },
+      {
+        "cpu_total_ms": 0.22850000858306885,
+        "frame_index": 276,
+        "frame_time_ms": 3.1387076377868652,
+        "gpu_total_ms": 2.910207748413086
+      },
+      {
+        "cpu_total_ms": 0.2556000053882599,
+        "frame_index": 277,
+        "frame_time_ms": 3.2159841060638428,
+        "gpu_total_ms": 2.9603841304779053
+      },
+      {
+        "cpu_total_ms": 0.535099983215332,
+        "frame_index": 278,
+        "frame_time_ms": 5.6612443923950195,
+        "gpu_total_ms": 5.1261444091796875
+      },
+      {
+        "cpu_total_ms": 0.21610000729560852,
+        "frame_index": 279,
+        "frame_time_ms": 3.772292137145996,
+        "gpu_total_ms": 3.55619215965271
+      },
+      {
+        "cpu_total_ms": 0.4666000306606293,
+        "frame_index": 280,
+        "frame_time_ms": 4.741799831390381,
+        "gpu_total_ms": 4.275199890136719
+      },
+      {
+        "cpu_total_ms": 0.4099000096321106,
+        "frame_index": 281,
+        "frame_time_ms": 3.136812210083008,
+        "gpu_total_ms": 2.726912260055542
+      },
+      {
+        "cpu_total_ms": 0.4514000117778778,
+        "frame_index": 282,
+        "frame_time_ms": 3.108680009841919,
+        "gpu_total_ms": 2.6572799682617188
+      },
+      {
+        "cpu_total_ms": 0.42799997329711914,
+        "frame_index": 283,
+        "frame_time_ms": 3.37609601020813,
+        "gpu_total_ms": 2.9480960369110107
+      },
+      {
+        "cpu_total_ms": 0.5918000340461731,
+        "frame_index": 284,
+        "frame_time_ms": 3.253175735473633,
+        "gpu_total_ms": 2.6613757610321045
+      },
+      {
+        "cpu_total_ms": 0.3020000159740448,
+        "frame_index": 285,
+        "frame_time_ms": 3.2582881450653076,
+        "gpu_total_ms": 2.9562880992889404
+      },
+      {
+        "cpu_total_ms": 0.1923000067472458,
+        "frame_index": 286,
+        "frame_time_ms": 4.765483856201172,
+        "gpu_total_ms": 4.573184013366699
+      },
+      {
+        "cpu_total_ms": 0.17069999873638153,
+        "frame_index": 287,
+        "frame_time_ms": 3.9246840476989746,
+        "gpu_total_ms": 3.753983974456787
+      },
+      {
+        "cpu_total_ms": 0.27420002222061157,
+        "frame_index": 288,
+        "frame_time_ms": 2.8854000568389893,
+        "gpu_total_ms": 2.6112000942230225
+      },
+      {
+        "cpu_total_ms": 0.39080002903938293,
+        "frame_index": 289,
+        "frame_time_ms": 4.6219682693481445,
+        "gpu_total_ms": 4.231168270111084
+      },
+      {
+        "cpu_total_ms": 0.3968000113964081,
+        "frame_index": 290,
+        "frame_time_ms": 3.897855758666992,
+        "gpu_total_ms": 3.5010557174682617
+      },
+      {
+        "cpu_total_ms": 0.40570002794265747,
+        "frame_index": 291,
+        "frame_time_ms": 4.313283920288086,
+        "gpu_total_ms": 3.9075839519500732
+      },
+      {
+        "cpu_total_ms": 0.4834999740123749,
+        "frame_index": 292,
+        "frame_time_ms": 3.9876277446746826,
+        "gpu_total_ms": 3.5041277408599854
+      },
+      {
+        "cpu_total_ms": 0.450300008058548,
+        "frame_index": 293,
+        "frame_time_ms": 4.54015588760376,
+        "gpu_total_ms": 4.089855670928955
+      },
+      {
+        "cpu_total_ms": 0.4819999933242798,
+        "frame_index": 294,
+        "frame_time_ms": 4.27079963684082,
+        "gpu_total_ms": 3.78879976272583
+      },
+      {
+        "cpu_total_ms": 0.43250003457069397,
+        "frame_index": 295,
+        "frame_time_ms": 3.253619909286499,
+        "gpu_total_ms": 2.821119785308838
+      },
+      {
+        "cpu_total_ms": 0.4397999942302704,
+        "frame_index": 296,
+        "frame_time_ms": 5.7953200340271,
+        "gpu_total_ms": 5.355520248413086
+      },
+      {
+        "cpu_total_ms": 0.3985999524593353,
+        "frame_index": 297,
+        "frame_time_ms": 3.9057998657226563,
+        "gpu_total_ms": 3.507200002670288
+      },
+      {
+        "cpu_total_ms": 0.49140000343322754,
+        "frame_index": 298,
+        "frame_time_ms": 3.157895803451538,
+        "gpu_total_ms": 2.6664958000183105
+      },
+      {
+        "cpu_total_ms": 0.45660001039505005,
+        "frame_index": 299,
+        "frame_time_ms": 3.129240036010742,
+        "gpu_total_ms": 2.672640085220337
+      },
+      {
+        "cpu_total_ms": 0.5098999738693237,
+        "frame_index": 300,
+        "frame_time_ms": 3.173323631286621,
+        "gpu_total_ms": 2.663423538208008
+      },
+      {
+        "cpu_total_ms": 0.2946999967098236,
+        "frame_index": 301,
+        "frame_time_ms": 4.946732521057129,
+        "gpu_total_ms": 4.652032375335693
+      },
+      {
+        "cpu_total_ms": 0.25619998574256897,
+        "frame_index": 302,
+        "frame_time_ms": 3.982408046722412,
+        "gpu_total_ms": 3.726207971572876
+      },
+      {
+        "cpu_total_ms": 0.5281999707221985,
+        "frame_index": 303,
+        "frame_time_ms": 4.240200042724609,
+        "gpu_total_ms": 3.7119998931884766
+      },
+      {
+        "cpu_total_ms": 0.6053999662399292,
+        "frame_index": 304,
+        "frame_time_ms": 4.098263740539551,
+        "gpu_total_ms": 3.492863893508911
+      },
+      {
+        "cpu_total_ms": 0.523900032043457,
+        "frame_index": 305,
+        "frame_time_ms": 3.467899799346924,
+        "gpu_total_ms": 2.943999767303467
+      },
+      {
+        "cpu_total_ms": 0.39480000734329224,
+        "frame_index": 306,
+        "frame_time_ms": 3.0490078926086426,
+        "gpu_total_ms": 2.654207944869995
+      },
+      {
+        "cpu_total_ms": 0.2605000138282776,
+        "frame_index": 307,
+        "frame_time_ms": 4.075923919677734,
+        "gpu_total_ms": 3.8154239654541016
+      },
+      {
+        "cpu_total_ms": 0.4343000054359436,
+        "frame_index": 308,
+        "frame_time_ms": 3.0475480556488037,
+        "gpu_total_ms": 2.613248109817505
+      },
+      {
+        "cpu_total_ms": 0.4528999924659729,
+        "frame_index": 309,
+        "frame_time_ms": 4.640035152435303,
+        "gpu_total_ms": 4.187135219573975
+      },
+      {
+        "cpu_total_ms": 0.3627000153064728,
+        "frame_index": 310,
+        "frame_time_ms": 3.8320119380950928,
+        "gpu_total_ms": 3.4693119525909424
+      },
+      {
+        "cpu_total_ms": 0.39430001378059387,
+        "frame_index": 311,
+        "frame_time_ms": 4.278332233428955,
+        "gpu_total_ms": 3.8840320110321045
+      },
+      {
+        "cpu_total_ms": 0.44439998269081116,
+        "frame_index": 312,
+        "frame_time_ms": 3.9311201572418213,
+        "gpu_total_ms": 3.486720085144043
+      },
+      {
+        "cpu_total_ms": 0.4870999753475189,
+        "frame_index": 313,
+        "frame_time_ms": 4.339387893676758,
+        "gpu_total_ms": 3.852287769317627
+      },
+      {
+        "cpu_total_ms": 0.6923999786376953,
+        "frame_index": 314,
+        "frame_time_ms": 4.680879592895508,
+        "gpu_total_ms": 3.9884796142578125
+      },
+      {
+        "cpu_total_ms": 0.4771000146865845,
+        "frame_index": 315,
+        "frame_time_ms": 3.5337395668029785,
+        "gpu_total_ms": 3.0566396713256836
+      },
+      {
+        "cpu_total_ms": 0.5692000389099121,
+        "frame_index": 316,
+        "frame_time_ms": 5.68612813949585,
+        "gpu_total_ms": 5.1169281005859375
+      },
+      {
+        "cpu_total_ms": 0.5171000361442566,
+        "frame_index": 317,
+        "frame_time_ms": 3.2266037464141846,
+        "gpu_total_ms": 2.709503650665283
+      },
+      {
+        "cpu_total_ms": 0.42170003056526184,
+        "frame_index": 318,
+        "frame_time_ms": 3.1199398040771484,
+        "gpu_total_ms": 2.698239803314209
+      },
+      {
+        "cpu_total_ms": 0.3038000166416168,
+        "frame_index": 319,
+        "frame_time_ms": 4.94968843460083,
+        "gpu_total_ms": 4.645888328552246
+      },
+      {
+        "cpu_total_ms": 0.23740002512931824,
+        "frame_index": 320,
+        "frame_time_ms": 4.156248092651367,
+        "gpu_total_ms": 3.9188480377197266
+      },
+      {
+        "cpu_total_ms": 0.5373000502586365,
+        "frame_index": 321,
+        "frame_time_ms": 4.323028087615967,
+        "gpu_total_ms": 3.7857279777526855
+      },
+      {
+        "cpu_total_ms": 0.42629995942115784,
+        "frame_index": 322,
+        "frame_time_ms": 3.115324020385742,
+        "gpu_total_ms": 2.689023971557617
+      },
+      {
+        "cpu_total_ms": 0.5785999894142151,
+        "frame_index": 323,
+        "frame_time_ms": 5.75492000579834,
+        "gpu_total_ms": 5.1763200759887695
+      },
+      {
+        "cpu_total_ms": 0.4781999886035919,
+        "frame_index": 324,
+        "frame_time_ms": 3.1283118724823,
+        "gpu_total_ms": 2.6501119136810303
+      },
+      {
+        "cpu_total_ms": 0.3769000172615051,
+        "frame_index": 325,
+        "frame_time_ms": 4.143171787261963,
+        "gpu_total_ms": 3.7662718296051025
+      },
+      {
+        "cpu_total_ms": 0.44190001487731934,
+        "frame_index": 326,
+        "frame_time_ms": 5.052971839904785,
+        "gpu_total_ms": 4.611072063446045
+      },
+      {
+        "cpu_total_ms": 0.4057999551296234,
+        "frame_index": 327,
+        "frame_time_ms": 4.329768180847168,
+        "gpu_total_ms": 3.9239680767059326
+      },
+      {
+        "cpu_total_ms": 0.4887000024318695,
+        "frame_index": 328,
+        "frame_time_ms": 3.455227851867676,
+        "gpu_total_ms": 2.9665279388427734
+      },
+      {
+        "cpu_total_ms": 0.37709999084472656,
+        "frame_index": 329,
+        "frame_time_ms": 3.0446197986602783,
+        "gpu_total_ms": 2.6675198078155518
+      },
+      {
+        "cpu_total_ms": 0.335999995470047,
+        "frame_index": 330,
+        "frame_time_ms": 5.431424140930176,
+        "gpu_total_ms": 5.095424175262451
+      },
+      {
+        "cpu_total_ms": 0.2442999929189682,
+        "frame_index": 331,
+        "frame_time_ms": 2.924107789993286,
+        "gpu_total_ms": 2.6798079013824463
+      },
+      {
+        "cpu_total_ms": 0.44190001487731934,
+        "frame_index": 332,
+        "frame_time_ms": 4.384300231933594,
+        "gpu_total_ms": 3.9424002170562744
+      },
+      {
+        "cpu_total_ms": 0.43810001015663147,
+        "frame_index": 333,
+        "frame_time_ms": 5.3594441413879395,
+        "gpu_total_ms": 4.92134428024292
+      },
+      {
+        "cpu_total_ms": 0.4600999653339386,
+        "frame_index": 334,
+        "frame_time_ms": 4.532547950744629,
+        "gpu_total_ms": 4.072447776794434
+      },
+      {
+        "cpu_total_ms": 0.5309999585151672,
+        "frame_index": 335,
+        "frame_time_ms": 3.5313198566436768,
+        "gpu_total_ms": 3.0003199577331543
+      },
+      {
+        "cpu_total_ms": 0.4870000183582306,
+        "frame_index": 336,
+        "frame_time_ms": 4.307543754577637,
+        "gpu_total_ms": 3.8205437660217285
+      },
+      {
+        "cpu_total_ms": 0.42089998722076416,
+        "frame_index": 337,
+        "frame_time_ms": 4.325411796569824,
+        "gpu_total_ms": 3.9045116901397705
+      },
+      {
+        "cpu_total_ms": 0.41609999537467957,
+        "frame_index": 338,
+        "frame_time_ms": 3.1112680435180664,
+        "gpu_total_ms": 2.6951680183410645
+      },
+      {
+        "cpu_total_ms": 0.3736000061035156,
+        "frame_index": 339,
+        "frame_time_ms": 3.3524160385131836,
+        "gpu_total_ms": 2.978816032409668
+      },
+      {
+        "cpu_total_ms": 0.43619999289512634,
+        "frame_index": 340,
+        "frame_time_ms": 3.9689998626708984,
+        "gpu_total_ms": 3.5327999591827393
+      },
+      {
+        "cpu_total_ms": 0.38509997725486755,
+        "frame_index": 341,
+        "frame_time_ms": 5.514315605163574,
+        "gpu_total_ms": 5.129215717315674
+      },
+      {
+        "cpu_total_ms": 0.41749998927116394,
+        "frame_index": 342,
+        "frame_time_ms": 4.3547797203063965,
+        "gpu_total_ms": 3.93727970123291
+      },
+      {
+        "cpu_total_ms": 0.45809999108314514,
+        "frame_index": 343,
+        "frame_time_ms": 3.134835958480835,
+        "gpu_total_ms": 2.6767358779907227
+      },
+      {
+        "cpu_total_ms": 0.43550005555152893,
+        "frame_index": 344,
+        "frame_time_ms": 5.502252101898193,
+        "gpu_total_ms": 5.066751956939697
+      },
+      {
+        "cpu_total_ms": 0.4065999984741211,
+        "frame_index": 345,
+        "frame_time_ms": 3.9557840824127197,
+        "gpu_total_ms": 3.5491840839385986
+      },
+      {
+        "cpu_total_ms": 0.41849997639656067,
+        "frame_index": 346,
+        "frame_time_ms": 3.367619752883911,
+        "gpu_total_ms": 2.949119806289673
+      },
+      {
+        "cpu_total_ms": 0.5595999956130981,
+        "frame_index": 347,
+        "frame_time_ms": 5.1368794441223145,
+        "gpu_total_ms": 4.577279567718506
+      },
+      {
+        "cpu_total_ms": 0.4794999957084656,
+        "frame_index": 348,
+        "frame_time_ms": 4.379916191101074,
+        "gpu_total_ms": 3.900416135787964
+      },
+      {
+        "cpu_total_ms": 0.4892999827861786,
+        "frame_index": 349,
+        "frame_time_ms": 3.1168839931488037,
+        "gpu_total_ms": 2.6275839805603027
+      },
+      {
+        "cpu_total_ms": 0.5090000033378601,
+        "frame_index": 350,
+        "frame_time_ms": 3.119175910949707,
+        "gpu_total_ms": 2.610175848007202
+      },
+      {
+        "cpu_total_ms": 0.5174000263214111,
+        "frame_index": 351,
+        "frame_time_ms": 4.287768363952637,
+        "gpu_total_ms": 3.7703680992126465
+      },
+      {
+        "cpu_total_ms": 0.3547999858856201,
+        "frame_index": 352,
+        "frame_time_ms": 3.086832046508789,
+        "gpu_total_ms": 2.732032060623169
+      },
+      {
+        "cpu_total_ms": 0.3678000271320343,
+        "frame_index": 353,
+        "frame_time_ms": 4.3634161949157715,
+        "gpu_total_ms": 3.9956159591674805
+      },
+      {
+        "cpu_total_ms": 0.5047999620437622,
+        "frame_index": 354,
+        "frame_time_ms": 4.654848098754883,
+        "gpu_total_ms": 4.15004825592041
+      },
+      {
+        "cpu_total_ms": 0.5473999977111816,
+        "frame_index": 355,
+        "frame_time_ms": 4.292168140411377,
+        "gpu_total_ms": 3.7447681427001953
+      },
+      {
+        "cpu_total_ms": 0.5430999994277954,
+        "frame_index": 356,
+        "frame_time_ms": 4.011387825012207,
+        "gpu_total_ms": 3.468287944793701
+      },
+      {
+        "cpu_total_ms": 0.5062000155448914,
+        "frame_index": 357,
+        "frame_time_ms": 3.592536211013794,
+        "gpu_total_ms": 3.086336135864258
+      },
+      {
+        "cpu_total_ms": 0.43560001254081726,
+        "frame_index": 358,
+        "frame_time_ms": 3.045775890350342,
+        "gpu_total_ms": 2.610175848007202
+      },
+      {
+        "cpu_total_ms": 0.45489999651908875,
+        "frame_index": 359,
+        "frame_time_ms": 4.1761155128479,
+        "gpu_total_ms": 3.7212157249450684
+      },
+      {
+        "cpu_total_ms": 0.459199994802475,
+        "frame_index": 360,
+        "frame_time_ms": 3.912127733230591,
+        "gpu_total_ms": 3.452927827835083
+      },
+      {
+        "cpu_total_ms": 0.45270004868507385,
+        "frame_index": 361,
+        "frame_time_ms": 4.633692264556885,
+        "gpu_total_ms": 4.180992126464844
+      },
+      {
+        "cpu_total_ms": 0.45649999380111694,
+        "frame_index": 362,
+        "frame_time_ms": 3.8971400260925293,
+        "gpu_total_ms": 3.4406399726867676
+      },
+      {
+        "cpu_total_ms": 0.4764999747276306,
+        "frame_index": 363,
+        "frame_time_ms": 4.408659934997559,
+        "gpu_total_ms": 3.932159900665283
+      },
+      {
+        "cpu_total_ms": 0.5000999569892883,
+        "frame_index": 364,
+        "frame_time_ms": 4.015491962432861,
+        "gpu_total_ms": 3.5153918266296387
+      },
+      {
+        "cpu_total_ms": 0.5314000248908997,
+        "frame_index": 365,
+        "frame_time_ms": 4.356040000915527,
+        "gpu_total_ms": 3.8246400356292725
+      },
+      {
+        "cpu_total_ms": 0.4861000180244446,
+        "frame_index": 366,
+        "frame_time_ms": 3.4628679752349854,
+        "gpu_total_ms": 2.9767680168151855
+      },
+      {
+        "cpu_total_ms": 0.4456000328063965,
+        "frame_index": 367,
+        "frame_time_ms": 3.1049280166625977,
+        "gpu_total_ms": 2.659327983856201
+      },
+      {
+        "cpu_total_ms": 0.49330002069473267,
+        "frame_index": 368,
+        "frame_time_ms": 3.4270598888397217,
+        "gpu_total_ms": 2.933759927749634
+      },
+      {
+        "cpu_total_ms": 0.29610002040863037,
+        "frame_index": 369,
+        "frame_time_ms": 2.926755905151367,
+        "gpu_total_ms": 2.6306560039520264
+      },
+      {
+        "cpu_total_ms": 0.29899999499320984,
+        "frame_index": 370,
+        "frame_time_ms": 5.344247817993164,
+        "gpu_total_ms": 5.045248031616211
+      },
+      {
+        "cpu_total_ms": 0.2981000244617462,
+        "frame_index": 371,
+        "frame_time_ms": 3.958899974822998,
+        "gpu_total_ms": 3.660799980163574
+      },
+      {
+        "cpu_total_ms": 0.4145999848842621,
+        "frame_index": 372,
+        "frame_time_ms": 4.345736026763916,
+        "gpu_total_ms": 3.931135892868042
+      },
+      {
+        "cpu_total_ms": 0.5582000017166138,
+        "frame_index": 373,
+        "frame_time_ms": 4.002935886383057,
+        "gpu_total_ms": 3.4447360038757324
+      },
+      {
+        "cpu_total_ms": 0.5123000144958496,
+        "frame_index": 374,
+        "frame_time_ms": 4.336939811706543,
+        "gpu_total_ms": 3.8246400356292725
+      },
+      {
+        "cpu_total_ms": 0.6479000449180603,
+        "frame_index": 375,
+        "frame_time_ms": 3.568347930908203,
+        "gpu_total_ms": 2.920447826385498
+      },
+      {
+        "cpu_total_ms": 0.5128999948501587,
+        "frame_index": 376,
+        "frame_time_ms": 3.1292200088500977,
+        "gpu_total_ms": 2.6163198947906494
+      },
+      {
+        "cpu_total_ms": 0.4011000096797943,
+        "frame_index": 377,
+        "frame_time_ms": 5.385931491851807,
+        "gpu_total_ms": 4.9848313331604
+      },
+      {
+        "cpu_total_ms": 0.3806999921798706,
+        "frame_index": 378,
+        "frame_time_ms": 2.94566011428833,
+        "gpu_total_ms": 2.56496000289917
+      },
+      {
+        "cpu_total_ms": 0.38450002670288086,
+        "frame_index": 379,
+        "frame_time_ms": 5.45227575302124,
+        "gpu_total_ms": 5.067775726318359
+      },
+      {
+        "cpu_total_ms": 0.49320000410079956,
+        "frame_index": 380,
+        "frame_time_ms": 3.895951986312866,
+        "gpu_total_ms": 3.402751922607422
+      },
+      {
+        "cpu_total_ms": 0.6614000201225281,
+        "frame_index": 381,
+        "frame_time_ms": 4.38261604309082,
+        "gpu_total_ms": 3.7212162017822266
+      },
+      {
+        "cpu_total_ms": 0.6812000274658203,
+        "frame_index": 382,
+        "frame_time_ms": 4.138224124908447,
+        "gpu_total_ms": 3.457024097442627
+      },
+      {
+        "cpu_total_ms": 0.6539999842643738,
+        "frame_index": 383,
+        "frame_time_ms": 3.284656047821045,
+        "gpu_total_ms": 2.6306560039520264
+      },
+      {
+        "cpu_total_ms": 0.6362000107765198,
+        "frame_index": 384,
+        "frame_time_ms": 3.231015682220459,
+        "gpu_total_ms": 2.594815731048584
+      },
+      {
+        "cpu_total_ms": 0.33889999985694885,
+        "frame_index": 385,
+        "frame_time_ms": 5.229523658752441,
+        "gpu_total_ms": 4.890623569488525
+      },
+      {
+        "cpu_total_ms": 0.27950000762939453,
+        "frame_index": 386,
+        "frame_time_ms": 3.966860055923462,
+        "gpu_total_ms": 3.6873600482940674
+      },
+      {
+        "cpu_total_ms": 0.3382999897003174,
+        "frame_index": 387,
+        "frame_time_ms": 3.7410519123077393,
+        "gpu_total_ms": 3.402751922607422
+      },
+      {
+        "cpu_total_ms": 0.28230002522468567,
+        "frame_index": 388,
+        "frame_time_ms": 4.1550679206848145,
+        "gpu_total_ms": 3.872767925262451
+      },
+      {
+        "cpu_total_ms": 0.3841000199317932,
+        "frame_index": 389,
+        "frame_time_ms": 3.824739933013916,
+        "gpu_total_ms": 3.4406399726867676
+      },
+      {
+        "cpu_total_ms": 0.29420000314712524,
+        "frame_index": 390,
+        "frame_time_ms": 4.155416011810303,
+        "gpu_total_ms": 3.8612160682678223
+      },
+      {
+        "cpu_total_ms": 0.29580000042915344,
+        "frame_index": 391,
+        "frame_time_ms": 4.224887847900391,
+        "gpu_total_ms": 3.9290878772735596
+      },
+      {
+        "cpu_total_ms": 0.27740001678466797,
+        "frame_index": 392,
+        "frame_time_ms": 3.246840000152588,
+        "gpu_total_ms": 2.96943998336792
+      },
+      {
+        "cpu_total_ms": 0.273000031709671,
+        "frame_index": 393,
+        "frame_time_ms": 5.257831573486328,
+        "gpu_total_ms": 4.9848313331604
+      },
+      {
+        "cpu_total_ms": 0.33340001106262207,
+        "frame_index": 394,
+        "frame_time_ms": 2.9435760974884033,
+        "gpu_total_ms": 2.6101760864257813
+      },
+      {
+        "cpu_total_ms": 0.2760999798774719,
+        "frame_index": 395,
+        "frame_time_ms": 4.281988143920898,
+        "gpu_total_ms": 4.005887985229492
+      },
+      {
+        "cpu_total_ms": 0.2750000059604645,
+        "frame_index": 396,
+        "frame_time_ms": 2.876984119415283,
+        "gpu_total_ms": 2.6019840240478516
+      },
+      {
+        "cpu_total_ms": 0.2914000153541565,
+        "frame_index": 397,
+        "frame_time_ms": 4.313671588897705,
+        "gpu_total_ms": 4.022271633148193
+      },
+      {
+        "cpu_total_ms": 0.18629999458789825,
+        "frame_index": 398,
+        "frame_time_ms": 2.787260055541992,
+        "gpu_total_ms": 2.6009600162506104
+      },
+      {
+        "cpu_total_ms": 0.33390000462532043,
+        "frame_index": 399,
+        "frame_time_ms": 4.006988048553467,
+        "gpu_total_ms": 3.6730880737304688
+      },
+      {
+        "cpu_total_ms": 0.384799987077713,
+        "frame_index": 400,
+        "frame_time_ms": 4.937504291534424,
+        "gpu_total_ms": 4.552704334259033
+      },
+      {
+        "cpu_total_ms": 0.4618999660015106,
+        "frame_index": 401,
+        "frame_time_ms": 4.340811729431152,
+        "gpu_total_ms": 3.8789119720458984
+      },
+      {
+        "cpu_total_ms": 0.42740002274513245,
+        "frame_index": 402,
+        "frame_time_ms": 4.141448020935059,
+        "gpu_total_ms": 3.714047908782959
+      },
+      {
+        "cpu_total_ms": 0.42239999771118164,
+        "frame_index": 403,
+        "frame_time_ms": 3.009023904800415,
+        "gpu_total_ms": 2.5866239070892334
+      },
+      {
+        "cpu_total_ms": 0.5128999948501587,
+        "frame_index": 404,
+        "frame_time_ms": 5.482371807098389,
+        "gpu_total_ms": 4.9694719314575195
+      },
+      {
+        "cpu_total_ms": 0.4204999506473541,
+        "frame_index": 405,
+        "frame_time_ms": 3.157651901245117,
+        "gpu_total_ms": 2.737151861190796
+      },
+      {
+        "cpu_total_ms": 0.5407999753952026,
+        "frame_index": 406,
+        "frame_time_ms": 3.5759358406066895,
+        "gpu_total_ms": 3.0351357460021973
+      },
+      {
+        "cpu_total_ms": 0.37789997458457947,
+        "frame_index": 407,
+        "frame_time_ms": 4.924460411071777,
+        "gpu_total_ms": 4.546560287475586
+      },
+      {
+        "cpu_total_ms": 0.3166999816894531,
+        "frame_index": 408,
+        "frame_time_ms": 4.040987968444824,
+        "gpu_total_ms": 3.724287986755371
+      },
+      {
+        "cpu_total_ms": 0.41429999470710754,
+        "frame_index": 409,
+        "frame_time_ms": 3.117436170578003,
+        "gpu_total_ms": 2.7031362056732178
+      },
+      {
+        "cpu_total_ms": 0.8043999671936035,
+        "frame_index": 410,
+        "frame_time_ms": 4.92087984085083,
+        "gpu_total_ms": 4.116479873657227
+      },
+      {
+        "cpu_total_ms": 0.4666000306606293,
+        "frame_index": 411,
+        "frame_time_ms": 3.3890957832336426,
+        "gpu_total_ms": 2.9224958419799805
+      },
+      {
+        "cpu_total_ms": 0.4092999994754791,
+        "frame_index": 412,
+        "frame_time_ms": 3.0440521240234375,
+        "gpu_total_ms": 2.634752035140991
+      },
+      {
+        "cpu_total_ms": 0.2766999900341034,
+        "frame_index": 413,
+        "frame_time_ms": 3.35996413230896,
+        "gpu_total_ms": 3.083264112472534
+      },
+      {
+        "cpu_total_ms": 0.26460000872612,
+        "frame_index": 414,
+        "frame_time_ms": 2.8398642539978027,
+        "gpu_total_ms": 2.5752642154693604
+      },
+      {
+        "cpu_total_ms": 0.27079999446868896,
+        "frame_index": 415,
+        "frame_time_ms": 5.201359748840332,
+        "gpu_total_ms": 4.9305596351623535
+      },
+      {
+        "cpu_total_ms": 0.27560001611709595,
+        "frame_index": 416,
+        "frame_time_ms": 3.7551519870758057,
+        "gpu_total_ms": 3.4795520305633545
+      },
+      {
+        "cpu_total_ms": 0.3823000192642212,
+        "frame_index": 417,
+        "frame_time_ms": 4.131164073944092,
+        "gpu_total_ms": 3.74886417388916
+      },
+      {
+        "cpu_total_ms": 0.4572000205516815,
+        "frame_index": 418,
+        "frame_time_ms": 3.8824801445007324,
+        "gpu_total_ms": 3.4252800941467285
+      },
+      {
+        "cpu_total_ms": 0.5037999749183655,
+        "frame_index": 419,
+        "frame_time_ms": 4.540407657623291,
+        "gpu_total_ms": 4.03660774230957
+      },
+      {
+        "cpu_total_ms": 0.5401999950408936,
+        "frame_index": 420,
+        "frame_time_ms": 3.1360397338867188,
+        "gpu_total_ms": 2.595839738845825
+      },
+      {
+        "cpu_total_ms": 0.38120004534721375,
+        "frame_index": 421,
+        "frame_time_ms": 3.0804641246795654,
+        "gpu_total_ms": 2.6992640495300293
+      },
+      {
+        "cpu_total_ms": 0.23160001635551453,
+        "frame_index": 422,
+        "frame_time_ms": 3.1643359661102295,
+        "gpu_total_ms": 2.9327359199523926
+      },
+      {
+        "cpu_total_ms": 0.2702000141143799,
+        "frame_index": 423,
+        "frame_time_ms": 4.402039527893066,
+        "gpu_total_ms": 4.131839752197266
+      },
+      {
+        "cpu_total_ms": 0.2734000086784363,
+        "frame_index": 424,
+        "frame_time_ms": 3.943351984024048,
+        "gpu_total_ms": 3.669951915740967
+      },
+      {
+        "cpu_total_ms": 0.3530999720096588,
+        "frame_index": 425,
+        "frame_time_ms": 3.8766841888427734,
+        "gpu_total_ms": 3.5235841274261475
+      },
+      {
+        "cpu_total_ms": 0.3329000174999237,
+        "frame_index": 426,
+        "frame_time_ms": 4.130916118621826,
+        "gpu_total_ms": 3.79801607131958
+      },
+      {
+        "cpu_total_ms": 0.3513000011444092,
+        "frame_index": 427,
+        "frame_time_ms": 3.028035879135132,
+        "gpu_total_ms": 2.6767358779907227
+      },
+      {
+        "cpu_total_ms": 0.4258999824523926,
+        "frame_index": 428,
+        "frame_time_ms": 5.60938835144043,
+        "gpu_total_ms": 5.183488368988037
+      },
+      {
+        "cpu_total_ms": 0.4693000018596649,
+        "frame_index": 429,
+        "frame_time_ms": 3.367219924926758,
+        "gpu_total_ms": 2.8979198932647705
+      },
+      {
+        "cpu_total_ms": 0.4763999879360199,
+        "frame_index": 430,
+        "frame_time_ms": 4.2733917236328125,
+        "gpu_total_ms": 3.7969918251037598
+      },
+      {
+        "cpu_total_ms": 0.4706000089645386,
+        "frame_index": 431,
+        "frame_time_ms": 5.610055923461914,
+        "gpu_total_ms": 5.139455795288086
+      },
+      {
+        "cpu_total_ms": 0.5134000182151794,
+        "frame_index": 432,
+        "frame_time_ms": 3.3652400970458984,
+        "gpu_total_ms": 2.851840019226074
+      },
+      {
+        "cpu_total_ms": 0.46480000019073486,
+        "frame_index": 433,
+        "frame_time_ms": 4.284319877624512,
+        "gpu_total_ms": 3.8195199966430664
+      },
+      {
+        "cpu_total_ms": 0.43870002031326294,
+        "frame_index": 434,
+        "frame_time_ms": 3.1338679790496826,
+        "gpu_total_ms": 2.6951680183410645
+      },
+      {
+        "cpu_total_ms": 0.47099998593330383,
+        "frame_index": 435,
+        "frame_time_ms": 3.55733585357666,
+        "gpu_total_ms": 3.0863358974456787
+      },
+      {
+        "cpu_total_ms": 0.3901999890804291,
+        "frame_index": 436,
+        "frame_time_ms": 3.911735773086548,
+        "gpu_total_ms": 3.521535873413086
+      },
+      {
+        "cpu_total_ms": 0.45879998803138733,
+        "frame_index": 437,
+        "frame_time_ms": 3.3946080207824707,
+        "gpu_total_ms": 2.935807943344116
+      },
+      {
+        "cpu_total_ms": 0.4332999885082245,
+        "frame_index": 438,
+        "frame_time_ms": 3.0639560222625732,
+        "gpu_total_ms": 2.6306560039520264
+      },
+      {
+        "cpu_total_ms": 0.3853999674320221,
+        "frame_index": 439,
+        "frame_time_ms": 4.59608793258667,
+        "gpu_total_ms": 4.21068811416626
+      },
+      {
+        "cpu_total_ms": 0.28849998116493225,
+        "frame_index": 440,
+        "frame_time_ms": 3.7506439685821533,
+        "gpu_total_ms": 3.462143898010254
+      },
+      {
+        "cpu_total_ms": 0.3652999997138977,
+        "frame_index": 441,
+        "frame_time_ms": 4.20222806930542,
+        "gpu_total_ms": 3.836928129196167
+      },
+      {
+        "cpu_total_ms": 0.3769000172615051,
+        "frame_index": 442,
+        "frame_time_ms": 3.286083936691284,
+        "gpu_total_ms": 2.909183979034424
+      },
+      {
+        "cpu_total_ms": 0.34549999237060547,
+        "frame_index": 443,
+        "frame_time_ms": 4.929947376251221,
+        "gpu_total_ms": 4.584447383880615
+      },
+      {
+        "cpu_total_ms": 0.4028000235557556,
+        "frame_index": 444,
+        "frame_time_ms": 4.282735824584961,
+        "gpu_total_ms": 3.8799357414245605
+      },
+      {
+        "cpu_total_ms": 0.41510000824928284,
+        "frame_index": 445,
+        "frame_time_ms": 3.038588047027588,
+        "gpu_total_ms": 2.623487949371338
+      },
+      {
+        "cpu_total_ms": 0.6782000660896301,
+        "frame_index": 446,
+        "frame_time_ms": 4.441400051116943,
+        "gpu_total_ms": 3.763199806213379
+      },
+      {
+        "cpu_total_ms": 0.4487999975681305,
+        "frame_index": 447,
+        "frame_time_ms": 5.303584098815918,
+        "gpu_total_ms": 4.85478401184082
+      },
+      {
+        "cpu_total_ms": 0.4460999667644501,
+        "frame_index": 448,
+        "frame_time_ms": 3.29998779296875,
+        "gpu_total_ms": 2.8538877964019775
+      },
+      {
+        "cpu_total_ms": 0.4523000121116638,
+        "frame_index": 449,
+        "frame_time_ms": 5.054156303405762,
+        "gpu_total_ms": 4.601856231689453
+      },
+      {
+        "cpu_total_ms": 0.4272000193595886,
+        "frame_index": 450,
+        "frame_time_ms": 4.305088043212891,
+        "gpu_total_ms": 3.8778879642486572
+      },
+      {
+        "cpu_total_ms": 0.45980000495910645,
+        "frame_index": 451,
+        "frame_time_ms": 3.3444080352783203,
+        "gpu_total_ms": 2.884608030319214
+      },
+      {
+        "cpu_total_ms": 0.48510003089904785,
+        "frame_index": 452,
+        "frame_time_ms": 3.0522677898406982,
+        "gpu_total_ms": 2.5671677589416504
+      },
+      {
+        "cpu_total_ms": 0.46540001034736633,
+        "frame_index": 453,
+        "frame_time_ms": 4.347383975982666,
+        "gpu_total_ms": 3.881983995437622
+      },
+      {
+        "cpu_total_ms": 0.5196999907493591,
+        "frame_index": 454,
+        "frame_time_ms": 5.054996013641357,
+        "gpu_total_ms": 4.5352959632873535
+      },
+      {
+        "cpu_total_ms": 0.4239000082015991,
+        "frame_index": 455,
+        "frame_time_ms": 4.111323833465576,
+        "gpu_total_ms": 3.6874239444732666
+      },
+      {
+        "cpu_total_ms": 0.47029998898506165,
+        "frame_index": 456,
+        "frame_time_ms": 3.872028112411499,
+        "gpu_total_ms": 3.4017281532287598
+      },
+      {
+        "cpu_total_ms": 0.43479999899864197,
+        "frame_index": 457,
+        "frame_time_ms": 4.2655839920043945,
+        "gpu_total_ms": 3.8307840824127197
+      },
+      {
+        "cpu_total_ms": 0.4964999854564667,
+        "frame_index": 458,
+        "frame_time_ms": 3.9555721282958984,
+        "gpu_total_ms": 3.4590721130371094
+      },
+      {
+        "cpu_total_ms": 0.4854000210762024,
+        "frame_index": 459,
+        "frame_time_ms": 3.4539759159088135,
+        "gpu_total_ms": 2.968575954437256
+      },
+      {
+        "cpu_total_ms": 0.49729999899864197,
+        "frame_index": 460,
+        "frame_time_ms": 5.08482027053833,
+        "gpu_total_ms": 4.587520122528076
+      },
+      {
+        "cpu_total_ms": 0.49389997124671936,
+        "frame_index": 461,
+        "frame_time_ms": 4.329803943634033,
+        "gpu_total_ms": 3.8359038829803467
+      },
+      {
+        "cpu_total_ms": 0.6383000016212463,
+        "frame_index": 462,
+        "frame_time_ms": 3.5976598262786865,
+        "gpu_total_ms": 2.959359884262085
+      },
+      {
+        "cpu_total_ms": 0.47279998660087585,
+        "frame_index": 463,
+        "frame_time_ms": 3.114719867706299,
+        "gpu_total_ms": 2.6419198513031006
+      },
+      {
+        "cpu_total_ms": 0.5058000087738037,
+        "frame_index": 464,
+        "frame_time_ms": 3.4354641437530518,
+        "gpu_total_ms": 2.929664134979248
+      },
+      {
+        "cpu_total_ms": 0.5249999761581421,
+        "frame_index": 465,
+        "frame_time_ms": 3.155655860900879,
+        "gpu_total_ms": 2.6306560039520264
+      },
+      {
+        "cpu_total_ms": 0.32979997992515564,
+        "frame_index": 466,
+        "frame_time_ms": 5.600327968597412,
+        "gpu_total_ms": 5.2705278396606445
+      },
+      {
+        "cpu_total_ms": 0.3285999894142151,
+        "frame_index": 467,
+        "frame_time_ms": 3.9402480125427246,
+        "gpu_total_ms": 3.6116480827331543
+      },
+      {
+        "cpu_total_ms": 0.49320000410079956,
+        "frame_index": 468,
+        "frame_time_ms": 3.40231990814209,
+        "gpu_total_ms": 2.9091198444366455
+      },
+      {
+        "cpu_total_ms": 0.49699997901916504,
+        "frame_index": 469,
+        "frame_time_ms": 4.264296054840088,
+        "gpu_total_ms": 3.767296075820923
+      },
+      {
+        "cpu_total_ms": 0.4777999818325043,
+        "frame_index": 470,
+        "frame_time_ms": 5.063271522521973,
+        "gpu_total_ms": 4.5854716300964355
+      },
+      {
+        "cpu_total_ms": 0.48670005798339844,
+        "frame_index": 471,
+        "frame_time_ms": 4.260140419006348,
+        "gpu_total_ms": 3.77344012260437
+      },
+      {
+        "cpu_total_ms": 0.46240001916885376,
+        "frame_index": 472,
+        "frame_time_ms": 3.0797438621520996,
+        "gpu_total_ms": 2.6173439025878906
+      },
+      {
+        "cpu_total_ms": 0.4675000011920929,
+        "frame_index": 473,
+        "frame_time_ms": 4.250155925750732,
+        "gpu_total_ms": 3.782655954360962
+      },
+      {
+        "cpu_total_ms": 0.47589999437332153,
+        "frame_index": 474,
+        "frame_time_ms": 5.064443588256836,
+        "gpu_total_ms": 4.58854341506958
+      },
+      {
+        "cpu_total_ms": 0.7663999795913696,
+        "frame_index": 475,
+        "frame_time_ms": 4.646336078643799,
+        "gpu_total_ms": 3.8799359798431396
+      },
+      {
+        "cpu_total_ms": 0.46389999985694885,
+        "frame_index": 476,
+        "frame_time_ms": 3.9434521198272705,
+        "gpu_total_ms": 3.4795520305633545
+      },
+      {
+        "cpu_total_ms": 0.4683000147342682,
+        "frame_index": 477,
+        "frame_time_ms": 3.0794999599456787,
+        "gpu_total_ms": 2.6111998558044434
+      },
+      {
+        "cpu_total_ms": 0.4511999785900116,
+        "frame_index": 478,
+        "frame_time_ms": 5.4503679275512695,
+        "gpu_total_ms": 4.9991679191589355
+      },
+      {
+        "cpu_total_ms": 0.4475000202655792,
+        "frame_index": 479,
+        "frame_time_ms": 3.4345078468322754,
+        "gpu_total_ms": 2.9870078563690186
+      },
+      {
+        "cpu_total_ms": 0.5091999769210815,
+        "frame_index": 480,
+        "frame_time_ms": 3.429647922515869,
+        "gpu_total_ms": 2.920447826385498
+      },
+      {
+        "cpu_total_ms": 0.45229998230934143,
+        "frame_index": 481,
+        "frame_time_ms": 3.9042038917541504,
+        "gpu_total_ms": 3.451903820037842
+      },
+      {
+        "cpu_total_ms": 0.7965999841690063,
+        "frame_index": 482,
+        "frame_time_ms": 4.535223960876465,
+        "gpu_total_ms": 3.738623857498169
+      },
+      {
+        "cpu_total_ms": 0.5286999940872192,
+        "frame_index": 483,
+        "frame_time_ms": 3.959099769592285,
+        "gpu_total_ms": 3.4303998947143555
+      },
+      {
+        "cpu_total_ms": 0.5217000246047974,
+        "frame_index": 484,
+        "frame_time_ms": 5.5997161865234375,
+        "gpu_total_ms": 5.07801628112793
+      },
+      {
+        "cpu_total_ms": 0.599399983882904,
+        "frame_index": 485,
+        "frame_time_ms": 4.154727935791016,
+        "gpu_total_ms": 3.555327892303467
+      },
+      {
+        "cpu_total_ms": 0.679900050163269,
+        "frame_index": 486,
+        "frame_time_ms": 3.8502039909362793,
+        "gpu_total_ms": 3.1703040599823
+      },
+      {
+        "cpu_total_ms": 0.5234000086784363,
+        "frame_index": 487,
+        "frame_time_ms": 5.103752136230469,
+        "gpu_total_ms": 4.580352306365967
+      },
+      {
+        "cpu_total_ms": 0.4782000184059143,
+        "frame_index": 488,
+        "frame_time_ms": 4.377592086791992,
+        "gpu_total_ms": 3.8993918895721436
+      },
+      {
+        "cpu_total_ms": 0.4585999846458435,
+        "frame_index": 489,
+        "frame_time_ms": 4.185959815979004,
+        "gpu_total_ms": 3.7273600101470947
+      },
+      {
+        "cpu_total_ms": 0.7616999745368958,
+        "frame_index": 490,
+        "frame_time_ms": 3.3688037395477295,
+        "gpu_total_ms": 2.6071038246154785
+      },
+      {
+        "cpu_total_ms": 0.42750000953674316,
+        "frame_index": 491,
+        "frame_time_ms": 4.16510009765625,
+        "gpu_total_ms": 3.7375998497009277
+      },
+      {
+        "cpu_total_ms": 0.38580000400543213,
+        "frame_index": 492,
+        "frame_time_ms": 4.94157600402832,
+        "gpu_total_ms": 4.555776119232178
+      },
+      {
+        "cpu_total_ms": 0.4475000500679016,
+        "frame_index": 493,
+        "frame_time_ms": 4.315147876739502,
+        "gpu_total_ms": 3.867647886276245
+      },
+      {
+        "cpu_total_ms": 0.4732999801635742,
+        "frame_index": 494,
+        "frame_time_ms": 3.06197190284729,
+        "gpu_total_ms": 2.588671922683716
+      },
+      {
+        "cpu_total_ms": 0.40050002932548523,
+        "frame_index": 495,
+        "frame_time_ms": 2.972787857055664,
+        "gpu_total_ms": 2.5722877979278564
+      },
+      {
+        "cpu_total_ms": 0.42900002002716064,
+        "frame_index": 496,
+        "frame_time_ms": 3.013576030731201,
+        "gpu_total_ms": 2.584575891494751
+      },
+      {
+        "cpu_total_ms": 0.44609999656677246,
+        "frame_index": 497,
+        "frame_time_ms": 4.42331600189209,
+        "gpu_total_ms": 3.9772160053253174
+      },
+      {
+        "cpu_total_ms": 0.3566000163555145,
+        "frame_index": 498,
+        "frame_time_ms": 4.17304801940918,
+        "gpu_total_ms": 3.8164479732513428
+      },
+      {
+        "cpu_total_ms": 0.44620004296302795,
+        "frame_index": 499,
+        "frame_time_ms": 3.0318002700805664,
+        "gpu_total_ms": 2.5856001377105713
+      }
+    ]
+  },
+  "quality": {}
+}
