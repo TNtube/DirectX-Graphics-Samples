@@ -359,6 +359,8 @@ public:
     static float GetTotalCpuTime(void) { return s_TotalCpuTime.GetAvg(); }
     static float GetTotalGpuTime(void) { return s_TotalGpuTime.GetAvg(); }
     static float GetFrameDelta(void) { return s_FrameDelta.GetAvg(); }
+    static float GetLastCpuTime(void) { return s_TotalCpuTime.GetLast(); }
+    static float GetLastGpuTime(void) { return s_TotalGpuTime.GetLast(); }
 
     static void Display( TextContext& Text, float x )
     {
@@ -494,6 +496,16 @@ namespace EngineProfiling
         }
 
         Text.GetCommandContext().SetScissor(0, 0, g_DisplayWidth, g_DisplayHeight);
+    }
+
+    float GetTotalCpuTime()
+    {
+        return NestedTimingTree::GetLastCpuTime();
+    }
+
+    float GetTotalGpuTime()
+    {
+        return NestedTimingTree::GetLastGpuTime();
     }
 
 } // EngineProfiling

@@ -35,8 +35,17 @@
 #include "Display.h"
 #include "HardwareInfo.h"
 #include "MemoryTracker.h"
+#include "Benchmark.h"
+#include "EngineProfiling.h"
 
 #define LEGACY_RENDERER
+
+namespace
+{
+    bool g_BenchmarkMode = false;
+    std::string g_PrecisionMode = "fp32_baseline";
+    std::string g_OutputPath = "benchmark_results.json";
+}
 
 using namespace GameCore;
 using namespace Math;
@@ -148,7 +157,6 @@ void LoadIBLTextures()
 
 void ModelViewer::Startup( void )
 {
-
     MotionBlur::Enable = true;
     TemporalEffects::EnableTAA = true;
     FXAA::Enable = false;
@@ -160,7 +168,30 @@ void ModelViewer::Startup( void )
 
     Benchmark::HardwareInfo::Initialize();
     Benchmark::MemoryTracker::Initialize();
-    Benchmark::MemoryTracker::Sample();
+    Benchmark::Initialize();
+
+    uint32_t benchmarkFlag = 0;
+    if (CommandLineArgs::GetInteger(L"benchmark", benchmarkFlag) && benchmarkFlag != 0)
+    {
+        g_BenchmarkMode = true;
+        Graphics::SetVSyncEnabled(false);
+    }
+
+    std::wstring precisionArg;
+    if (CommandLineArgs::GetString(L"precision", precisionArg))
+        g_PrecisionMode = std::string(precisionArg.begin(), precisionArg.end());
+
+    std::wstring outputArg;
+    if (CommandLineArgs::GetString(L"output", outputArg))
+        g_OutputPath = std::string(outputArg.begin(), outputArg.end());
+
+    uint32_t warmupFrames = 0;
+    if (CommandLineArgs::GetInteger(L"warmup", warmupFrames))
+        Benchmark::SetWarmupFrames(warmupFrames);
+
+    uint32_t measuredFrames = 0;
+    if (CommandLineArgs::GetInteger(L"frames", measuredFrames))
+        Benchmark::SetMeasuredFrames(measuredFrames);
 
     LoadIBLTextures();
 
@@ -199,15 +230,18 @@ void ModelViewer::Startup( void )
     else
         m_CameraController.reset(new OrbitCamera(m_Camera, m_ModelInst.GetBoundingSphere(), Vector3(kYUnitVector)));
 
-    Benchmark::MemoryTracker::Sample();
-    Utility::Printf("MemoryTracker: peak=%lluMB avg=%lluMB samples=%zu\n",
-        Benchmark::MemoryTracker::GetPeakCommittedMB(),
-        Benchmark::MemoryTracker::GetAverageCommittedMB(),
-        Benchmark::MemoryTracker::GetSamples().size());
+    if (g_BenchmarkMode)
+    {
+        std::string sceneName = gltfFileName.empty() ? "Sponza" :
+            std::string(gltfFileName.begin(), gltfFileName.end());
+        Benchmark::StartRun(sceneName.c_str(), g_PrecisionMode.c_str());
+    }
 }
 
 void ModelViewer::Cleanup( void )
 {
+    Benchmark::Shutdown();
+
     m_ModelInst = nullptr;
 
     g_IBLTextures.clear();
@@ -374,4 +408,18 @@ void ModelViewer::RenderScene( void )
         MotionBlur::RenderObjectBlur(gfxContext, g_VelocityBuffer);
 
     gfxContext.Finish();
+
+    if (g_BenchmarkMode && Benchmark::IsRunning())
+    {
+        float cpuTimeMs = EngineProfiling::GetTotalCpuTime();
+        float gpuTimeMs = EngineProfiling::GetTotalGpuTime();
+        Benchmark::RecordFrame(cpuTimeMs, gpuTimeMs);
+
+        if (Benchmark::GetState() == Benchmark::State::Complete)
+        {
+            Benchmark::ExportToJson(g_OutputPath.c_str());
+            Utility::Printf("Benchmark complete. Results saved to: %s\n", g_OutputPath.c_str());
+            PostQuitMessage(0);
+        }
+    }
 }

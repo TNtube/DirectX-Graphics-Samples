@@ -8,6 +8,7 @@
 #include <vector>
 #include <algorithm>
 #include <cmath>
+#include <nlohmann/json.hpp>
 
 namespace Benchmark
 {
@@ -78,6 +79,23 @@ namespace Benchmark
             stats.P99 = percentile(99.0);
 
             return stats;
+        }
+
+        nlohmann::json ToJson() const
+        {
+            return {
+                    {"mean", Mean},
+                    {"median", Median},
+                    {"std_dev", StdDev},
+                    {"min", Min},
+                    {"max", Max},
+                    {"p1", P1},
+                    {"p5", P5},
+                    {"p95", P95},
+                    {"p99", P99},
+                    {"sample_count", SampleCount},
+                    {"coefficient_of_variation", CoefficientOfVariation}
+            };
         }
     };
 }

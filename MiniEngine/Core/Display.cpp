@@ -544,3 +544,11 @@ float Graphics::GetFrameRate(void)
 {
     return s_FrameTime == 0.0f ? 0.0f : 1.0f / s_FrameTime;
 }
+
+void Graphics::SetVSyncEnabled(bool enabled)
+{
+    if (enabled)
+        s_EnableVSync.Increment();
+    else
+        s_EnableVSync.Decrement();
+}

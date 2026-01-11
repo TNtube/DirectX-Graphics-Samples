@@ -40,5 +40,8 @@ namespace Graphics
     // The total number of frames per second
     float GetFrameRate(void);
 
+    // Control VSync (disable for benchmarking)
+    void SetVSyncEnabled(bool enabled);
+
     extern bool g_bEnableHDROutput;
 }
