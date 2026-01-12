@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.21)
 
+# Fix assimp warning
+set(CMAKE_POLICY_DEFAULT_CMP0175 OLD)
+
 # Project definition - Windows x64 only
 project(MiniEngine
     VERSION 1.0.0
