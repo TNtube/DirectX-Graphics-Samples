@@ -29,7 +29,7 @@ namespace Benchmark
     bool IsRunning();
     bool IsMeasuring();
 
-    void RecordFrame(float cpuTimeMs, float gpuTimeMs);
+    uint32_t RecordFrame(float cpuTimeMs, float gpuTimeMs);
     uint32_t GetCurrentFrame();
     uint32_t GetWarmupFrames();
     uint32_t GetMeasuredFrames();

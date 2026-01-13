@@ -109,10 +109,10 @@ namespace Benchmark
     void SetMeasuredFrames(uint32_t count) { s_MeasuredFrames = count; }
     void SetMemorySampleInterval(uint32_t frames) { s_MemorySampleInterval = frames; }
 
-    void RecordFrame(float cpuTimeMs, float gpuTimeMs)
+    uint32_t RecordFrame(float cpuTimeMs, float gpuTimeMs)
     {
         if (s_State == State::Idle || s_State == State::Complete)
-            return;
+            return s_CurrentFrame;
 
         s_CurrentFrame++;
 
@@ -124,7 +124,7 @@ namespace Benchmark
                 s_CurrentFrame = 0;
                 MemoryTracker::Sample();
             }
-            return;
+            return s_CurrentFrame;
         }
 
         float frameTime = cpuTimeMs + gpuTimeMs;
@@ -137,6 +137,8 @@ namespace Benchmark
 
         if (s_CurrentFrame >= s_MeasuredFrames)
             EndRun();
+
+        return s_CurrentFrame;
     }
 
     void ExportToJson(const char* outputPath)

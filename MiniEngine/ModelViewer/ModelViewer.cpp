@@ -36,6 +36,7 @@
 #include "HardwareInfo.h"
 #include "MemoryTracker.h"
 #include "Benchmark.h"
+#include "FrameCapture.h"
 #include "EngineProfiling.h"
 
 #define LEGACY_RENDERER
@@ -193,6 +194,15 @@ void ModelViewer::Startup( void )
     if (CommandLineArgs::GetInteger(L"frames", measuredFrames))
         Benchmark::SetMeasuredFrames(measuredFrames);
 
+    // Frame capture settings
+    uint32_t captureInterval = 0;
+    if (CommandLineArgs::GetInteger(L"capture", captureInterval))
+        Benchmark::SetCaptureInterval(captureInterval);
+
+    std::wstring captureDir;
+    if (CommandLineArgs::GetString(L"capture-dir", captureDir))
+        Benchmark::SetCaptureOutputDir(std::string(captureDir.begin(), captureDir.end()).c_str());
+
     LoadIBLTextures();
 
     std::wstring gltfFileName;
@@ -240,6 +250,7 @@ void ModelViewer::Startup( void )
 
 void ModelViewer::Cleanup( void )
 {
+    Benchmark::ShutdownFrameCapture();
     Benchmark::Shutdown();
 
     m_ModelInst = nullptr;
@@ -413,7 +424,11 @@ void ModelViewer::RenderScene( void )
     {
         float cpuTimeMs = EngineProfiling::GetTotalCpuTime();
         float gpuTimeMs = EngineProfiling::GetTotalGpuTime();
-        Benchmark::RecordFrame(cpuTimeMs, gpuTimeMs);
+        uint32_t frameNum = Benchmark::RecordFrame(cpuTimeMs, gpuTimeMs);
+
+        // Capture frames during measurement phase
+        if (Benchmark::GetState() == Benchmark::State::Measuring)
+            Benchmark::UpdateFrameCapture(frameNum);
 
         if (Benchmark::GetState() == Benchmark::State::Complete)
         {

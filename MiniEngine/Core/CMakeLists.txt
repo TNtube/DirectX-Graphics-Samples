@@ -59,6 +59,7 @@ set(CORE_SOURCES
     Benchmark/HardwareInfo.cpp
     Benchmark/MemoryTracker.cpp
     Benchmark/Benchmark.cpp
+    Benchmark/FrameCapture.cpp
     pch.cpp
 )
 
@@ -139,6 +140,7 @@ set(CORE_HEADERS
     Benchmark/HardwareInfo.h
     Benchmark/MemoryTracker.h
     Benchmark/Benchmark.h
+    Benchmark/FrameCapture.h
 )
 
 # Create static library
@@ -162,6 +164,9 @@ configure_miniengine_target(Core)
 
 # Link nlohmann_json for benchmark system
 target_link_libraries(Core PUBLIC nlohmann_json::nlohmann_json)
+
+# Link DirectXTex for frame capture
+target_link_libraries(Core PUBLIC DirectXTex)
 
 # Shader type overrides for shaders that don't follow naming convention
 # These are extracted from Core.vcxproj where explicit <ShaderType> is specified
